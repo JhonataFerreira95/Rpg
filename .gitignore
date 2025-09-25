@@ -1,0 +1,30 @@
+## Unity .gitignore
+
+# Pastas geradas automaticamente
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Arquivos de cache e configs locais
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.tmp
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Exportados
+*.apk
+*.aab
+*.unitypackage
