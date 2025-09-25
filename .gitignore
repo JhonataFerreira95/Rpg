@@ -10,6 +10,7 @@
 [Mm]emoryCaptures/
 UserSettings/
 
+
 # Arquivos de cache e configs locais
 .vs/
 *.csproj
