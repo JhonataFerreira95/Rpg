@@ -64,6 +64,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\script\lógica em c#\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scenes\script\lógica em c#\01_string.cs" />
+    <Compile Include="Assets\Scenes\script\Player.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
