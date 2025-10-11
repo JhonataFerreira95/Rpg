@@ -8,7 +8,7 @@
 ## Índice
 
 1. [Introdução](#introdução)
-2. [Variaveis e Métodos](#variaveis-e-métodos)
+2. [Variaveis e Métodos](#variaveis-métodos-e-tipos)
 
 
 ---
