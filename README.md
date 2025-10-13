@@ -9,7 +9,7 @@
 
 1. [Introdução](#introdução)
 2. [Variaveis e Métodos](#variaveis-métodos-e-tipos)
-
+3. [Classes](#classes)
 
 
 ---
@@ -70,3 +70,25 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
     - O mesmo vale para `privado(privade)` ou `protegido(protected)`
 
 # Classes
+
+- O que é uma classe? 
+
+    - Uma classe é nada mais nada menos que um agrupamento de código, com métodos e váriveis com funcionalidades generalista, criada pra solucionar ou inovar uma solução
+
+    - A classe pode ser definida como `public`, `private` ou `protected`, isso se chama `Encapsulamento`.
+
+    - A sintaxe para definir uma classe é a seguinte: 
+
+        ```cs
+
+            public class SuaClasse {
+                public int diaSemana = 2; // sua várivel
+                public void SuaFuncao()
+                {
+                     Debug.Log("Seu método foi criad0!");
+                }
+            }
+
+        ```
+    
+    - Aqui no exemplo temos a nossa `classe` em `public`, nosso `método` e seu tipo `void` e nossa váriavel `diaSemana` com seu tipo `int` e `public`.
