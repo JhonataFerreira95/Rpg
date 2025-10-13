@@ -62,12 +62,12 @@
     <Analyzer Include="C:\Users\bass1\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.3\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\script\lógica em c#\03_switch.cs" />
     <Compile Include="Assets\Scenes\script\Player.cs" />
     <Compile Include="Assets\Scenes\script\lógica em c#\03_if_else.cs" />
     <Compile Include="Assets\Scenes\script\Enemy.cs" />
     <Compile Include="Assets\Scenes\script\lógica em c#\02_classes.cs" />
     <Compile Include="Assets\Scenes\script\lógica em c#\01_variaveis_metodos.cs" />
-    <Compile Include="Assets\Scenes\script\lógica em c#\03_switch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

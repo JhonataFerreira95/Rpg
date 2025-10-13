@@ -131,3 +131,41 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         ``` 
 
 ## Condicionais com switch/case
+
+- O são condicionais com switch/case?
+    
+    - Na verdade é algo super simples e prática, sabe aquele seu código cheio de `if` e `else` para validar ou verificar algo? Pode ser "simplificado", já que ainda terá várias verificações mas crio que com menos linhas utilizando o `switch/case`.
+
+    - Com `switch/case` podemos deixar a quantidade de linhas de verificações menores, segue o exemplo:
+
+        ```cs
+
+            public class Switch_case : MonoBehavior {
+                
+                public int idade = 17;
+
+                void start(){
+                    // Sintaxe do switch case
+                    switch(idade);
+                        case 16:
+                            Debug.Log("Sua idade é 16 anos");
+                            break;
+                        case 17:
+                            Debug.Log("Sua idade é 17 anos");
+                            break;
+                        case 18:
+                            Debug.Log("Sua idade é 18 anos");
+                            break;
+                        default:
+                            Debug.Log("Sua idade não é 16, 17 nem 18.");
+                            break;
+                }
+            }
+
+        ```
+    
+    - Resultado:
+
+        - Vale resaltar que no `switch/case` possuímos o valor `default`, que podemo definir como se fosse um `else`.
+
+        - O `switch/case` não aceita operadores lógicos.
