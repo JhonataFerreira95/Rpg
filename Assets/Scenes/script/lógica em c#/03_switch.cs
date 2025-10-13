@@ -35,6 +35,9 @@ public class Aula_switch : MonoBehaviour // É utilizado para evitar o uso exage
             case 7:
                 Debug.Log("Domingo");
                 break;
+            default:
+                Debug.Log("Dia não encontrado");
+                break;
         }
     }
 
