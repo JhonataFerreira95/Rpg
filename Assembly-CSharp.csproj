@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scenes\script\lógica em c#\02_classes.cs" />
     <Compile Include="Assets\Scenes\script\lógica em c#\01_variaveis_metodos.cs" />
     <Compile Include="Assets\Scenes\script\Enemy.cs" />
+    <Compile Include="Assets\Scenes\script\lógica em c#\03_if_else.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
