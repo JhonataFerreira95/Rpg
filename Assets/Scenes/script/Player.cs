@@ -15,4 +15,23 @@ public class Player : MonoBehaviour
     {
 
     }
+
+    public int health;
+    public float speed;
+
+    void Atack() // Código para atacar
+    {
+
+    }
+
+    void Movement() // Código para mover
+    {
+
+    }
+
+    void Jump() // Código para pular
+    {
+        
+    }
+    
 }
