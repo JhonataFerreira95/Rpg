@@ -12,6 +12,7 @@
 3. [Classes](#classes)
 4. [Condicionais(if/else)](#condicionaisifelse)
 5. [Condicionais com switch/case](#condicionais-com-switchcase)
+6. [For, Foreach e Array](#for-foreach-e-array)
 
 
 ---
@@ -169,3 +170,5 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         - Vale resaltar que no `switch/case` possuímos o valor `default`, que podemo definir como se fosse um `else`.
 
         - O `switch/case` não aceita operadores lógicos.
+
+## For, Foreach e Array
