@@ -11,6 +11,7 @@
 2. [Variaveis e Métodos](#variaveis-métodos-e-tipos)
 
 
+
 ---
 
 ## Estrutura do projeto
@@ -55,3 +56,17 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         ```
 
     - Definimos a váriavel com seu tipo `string`, ou seja, tudo que colocarmos em `"aqui"` dentro das aspas são lestras.
+
+    - Para definirmos o método ou váriavel público, passamos a palavra reservada `public` antes de declarar o tipo e o nome da váriavel/método.
+
+    - Exemplo na prática:
+
+        ```cs
+
+            public diaSemana = 2;
+
+        ```
+
+    - O mesmo vale para `privado(privade)` ou `protegido(protected)`
+
+# Classes
