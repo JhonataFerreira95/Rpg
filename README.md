@@ -11,6 +11,7 @@
 2. [Variaveis e Métodos](#variaveis-métodos-e-tipos)
 3. [Classes](#classes)
 4. [Condicionais(if/else)](#condicionaisifelse)
+5. [Condicionais com switch/case](#condicionais-com-switchcase)
 
 
 ---
@@ -20,6 +21,7 @@
 ```bash
 
 IFRN RPG/
+├── .vscode
 ├── Assets/
 │   └── Scenes/
 │   └── script
@@ -64,7 +66,7 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
 
         ```cs
 
-            public diaSemana = 2;
+            public int diaSemana = 2;
 
         ```
 
@@ -127,3 +129,5 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
 
 
         ``` 
+
+## Condicionais com switch/case
