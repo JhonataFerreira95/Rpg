@@ -10,6 +10,7 @@
 1. [Introdução](#introdução)
 2. [Variaveis e Métodos](#variaveis-métodos-e-tipos)
 3. [Classes](#classes)
+4. [Condicionais(if/else)](#condicionaisifelse)
 
 
 ---
@@ -35,11 +36,11 @@ IFRN RPG/
 
 ```
 
-## Introdução
+# Introdução
 
 O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovilmento de um jogo para o IFRN campus parnamirim, com objetivo de ser utilizado para o TCC de conclusão do curso.
 
-# Variaveis, Métodos e Tipos
+## Variaveis, Métodos e Tipos
 
 - Variáveis são espaços reservados na memória do computador usados para armazenar valores ou dados que podem ser manipulados durante a execução de um programa.
 
@@ -69,7 +70,7 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
 
     - O mesmo vale para `privado(privade)` ou `protegido(protected)`
 
-# Classes
+## Classes
 
 - O que é uma classe? 
 
@@ -92,3 +93,37 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         ```
     
     - Aqui no exemplo temos a nossa `classe` em `public`, nosso `método` e seu tipo `void` e nossa váriavel `diaSemana` com seu tipo `int` e `public`.
+
+## Condicionais(if/else)
+
+- O que são condicionais?
+
+    - São o nosso `sim` ou `não`, nossa decisão, onde faremos decisões e comparações de código.
+
+    - Utilizamos a palavra reversada `if` para se e `else` para se não
+
+    - Exemplo na prática:
+
+        ```cs
+        
+            using UnityEngine;
+
+            public class ExemploIdade : MonoBehaviour
+            {
+                public int idade = 20;
+
+                void Start()
+                {
+                    if (idade >= 18)
+                    {
+                        Debug.Log("Você tem mais de 18 anos");
+                    }
+                    else
+                    {
+                        Debug.Log("Sua idade é menor que 18 anos");
+                    }
+                }
+            }
+
+
+        ``` 
