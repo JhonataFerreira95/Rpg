@@ -141,7 +141,9 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
 
         ```cs
 
-            public class Switch_case : MonoBehavior {
+            using UnityEngine;
+
+            public class Switch_case : MonoBehaviour {
                 
                 public int idade = 17;
 
@@ -199,5 +201,5 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
                 }
             }
         }
-        
+
         ```
