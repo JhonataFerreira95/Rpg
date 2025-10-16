@@ -167,7 +167,7 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
     
     - Resultado:
 
-        - Vale resaltar que no `switch/case` possuímos o valor `default`, que podemo definir como se fosse um `else`.
+        - Vale resaltar que no `switch/case` possuímos o valor `default`, que podemo definir como se fosse um `else` ou valor padrão.
 
         - O `switch/case` não aceita operadores lógicos.
 
