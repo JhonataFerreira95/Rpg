@@ -141,7 +141,9 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
 
         ```cs
 
-            public class Switch_case : MonoBehavior {
+            using UnityEngine;
+
+            public class Switch_case : MonoBehaviour {
                 
                 public int idade = 17;
 
@@ -172,3 +174,32 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         - O `switch/case` não aceita operadores lógicos.
 
 ## For, Foreach e Array
+
+- O que são laços de repetição?`for` e `foreach`
+
+- Laço de repetição é uma estrutura que execulta uma conjunto e instruções definidas, até todas as condições serem concluídas o laço continua se repetindo até concluír as instruções impostas.
+
+- Como funciona o `for`?
+
+    - Funciona de uma forma simples, vamos supor que você sabe quantas vezes a estrutura de código dentro do `for` vai se repetir, para isso temos a váriavel chamada contador, geralmente representada por um `i` que vai se repetir x vezes, ou seja, definimos nosso `i=5` ele vai se repetir 5 vezes. A condição de parada, que quando o laço concluír nossa condição ele deve parar. Váriavel incrementador serve para incrementar todas vez que o código rodar, exemplo, se o `i=5` vai rodar 5 vezes, ao final do primeiro laço nossa váriavel vai incrementar que o laço foi rodado 1 vez, assim atualizando nossa váriavel contador que inicialmente era 5 e vai passar a ser `i=4`, vale resltar que nossa `i` é tanto nossa váriavel contador, condição de parada como inteirador.
+
+    - Exemplo na prática:
+
+        ```cs
+
+        using UnityEngine;
+
+        public class Testfor : MonoBehaviour{
+
+            void start(){
+                public int result;
+                public int soma = 1;
+
+                for(i = 5; i < 10; i++){
+                    result = soma++
+                    Debug.Log("soma + " + result)
+                }
+            }
+        }
+
+        ```
