@@ -230,3 +230,17 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         ```
 
 ## Vetores com lists
+
+- O que são `lits`?
+
+    - Uma `lists` nada mais é do que um `array` só que mais dinâmico e volátel, enquanto o tamanho do `array` é definido em sua criação as `lits` por outro lado podem ter qualquer tamanho, podendo aumentar ou diminuir caso seja necessário.
+
+- Como é a sintaxe de uma `lits`?
+
+    - A sintaxe é bem parecida com a de um `array` normal, segue o exemplo na prática:
+
+        ```cs
+
+            
+
+        ```
