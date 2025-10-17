@@ -12,7 +12,8 @@
 3. [Classes](#classes)
 4. [Condicionais(if/else)](#condicionaisifelse)
 5. [Condicionais com switch/case](#condicionais-com-switchcase)
-6. [For, Foreach e Array](#for-foreach-e-array)
+6. [laços de repetição e vetores com for/foreach/array](#laços-de-repetição-e-vetores-com-forforeacharray)
+7. [Vetores com lists](#vetores-com-lists)
 
 
 ---
@@ -173,7 +174,7 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
 
         - O `switch/case` não aceita operadores lógicos.
 
-## For, Foreach e Array
+## Laços de repetição e vetores com for/foreach/array
 
 - O que são laços de repetição?`for` e `foreach`
 
@@ -227,3 +228,5 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
                 }
                 
         ```
+
+## Vetores com lists
