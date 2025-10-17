@@ -203,3 +203,27 @@ O projeto visa a apredizagem com `C#` em conjunto da IDE `Unity` para desenvovil
         }
 
         ```
+
+## Foreach e Array
+
+- O que é uma `foreach` e `array`?
+
+    - O `foreach` é outro jeito de trabalha com o `for` só que em junção com um `array`, o `foreach` só funciona com `array` ou `listas`.
+
+- O que é um `array`?
+
+    - `array` nada mais é que uma lista que pode armazenar todos os tipos de dados desdê `int` até `boolean`.
+
+- Junção de `foreach` e `array`
+
+    - Aqui iremos utilizar o `foreach` para ler todos os valores dentro do nosso `array`.
+
+    - Exemplo na prática:
+
+         ```cs
+
+                foreach(int valor in arrayInt){
+                    Debug.Log(valor);
+                }
+                
+        ```
