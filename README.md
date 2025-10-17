@@ -25,9 +25,14 @@
 IFRN RPG/
 ├── .vscode
 ├── Assets/
+│   └── Animation/
+│   └── Prefabs/
 │   └── Scenes/
-│   └── script
-│   └── Lógica em c#
+│       └── Lógica em c#/
+│       └── Script/
+│   └── Script/
+│   └── Sprites/
+│   └── UI\Dialogue
 ├── Logs/
 ├── Packages/
 ├── Ruby fundamentos/
