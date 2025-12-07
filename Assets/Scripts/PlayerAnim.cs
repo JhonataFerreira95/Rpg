@@ -27,5 +27,15 @@ public class PlayerAnim : MonoBehaviour
         {
             anim.SetInteger("transition", 0);
         }
+
+        if(player.direction.x > 0)
+        {
+            transform.eulerAngles = new Vector2(0, 0);
+        }
+
+        if(player.direction.x < 0)
+        {
+            transform.eulerAngles = new Vector2(0, 180);
+        }
     }
 }
