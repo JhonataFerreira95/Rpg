@@ -31,7 +31,7 @@ public class PlayerAnim : MonoBehaviour
             {
                 if (player.isRolling)
                 {
-                    anim.SetInteger("transition", 3);
+                    anim.SetTrigger("isRoll");
                 }
                 else
                 {
