@@ -5,8 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     
-    public float speed;
+    [SerializeField] private float speed;
+    [SerializeField] private float runSpeed;
 
+    private float initialSpeed;
     private Rigidbody2D rig;
     private Vector2 _direction;
 
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        initialSpeed = speed;
     }
 
     private void Update()
@@ -49,7 +52,15 @@ public class Player : MonoBehaviour
 
     void OnRun()
     {
-        
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = runSpeed;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = initialSpeed;
+        }
     }
 
     #endregion
