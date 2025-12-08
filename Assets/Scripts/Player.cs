@@ -23,7 +23,11 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-       _direction =  new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+       
+       OnInput();
+
+        OnRun();    
+
     }
 
     private void FixedUpdate()
@@ -32,6 +36,11 @@ public class Player : MonoBehaviour
     }
 
     #region Movement
+
+    void OnInput()
+    {
+        _direction =  new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    }
 
     void OnMove()
     {
