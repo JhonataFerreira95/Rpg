@@ -28,7 +28,21 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        OnMove();
+    }
+
+    #region Movement
+
+    void OnMove()
+    {
         rig.MovePosition(rig.position + _direction * speed * Time.fixedDeltaTime);
     }
+
+    void OnRun()
+    {
+        
+    }
+
+    #endregion
 
 }
