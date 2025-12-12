@@ -101,6 +101,7 @@
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\BossCamera\BossLookAt.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
+    <Compile Include="Assets\Scripts\Dialogue\DialogueSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\FadeOutNearbyObjects\FadeOut.shader" />
