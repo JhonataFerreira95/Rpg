@@ -41,7 +41,14 @@ public class BulderEditor : Editor
     {
         DrawDefaultInspector();
 
-        
+        DialogueSettings ds = (DialogueSettings)target;
+
+        Langueges l = new Langueges();
+        l .portuguese = ds.sentence;
+
+        Sentences s = new Sentences();
+        s.profile = ds.speakSprite;
+        s.sentence = l;
     }
 }
 
