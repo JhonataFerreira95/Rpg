@@ -16,7 +16,9 @@ public class NewBehaviourScript : ScriptableObject
 
 public class Sentences
 {
-    
+    public string actorName;
+    public Sprite profile;
+    public Langueges sentence;
 }
 
 public class Langueges
