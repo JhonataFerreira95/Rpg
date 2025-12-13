@@ -23,5 +23,7 @@ public class Sentences
 
 public class Langueges
 {
-    
+    public string portuguese;
+    public string english;
+    public string spanish;
 }
