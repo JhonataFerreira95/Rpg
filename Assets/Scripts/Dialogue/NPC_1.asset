@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: NPC_1
   m_EditorClassIdentifier: 
   actor: {fileID: 0}
-  speakSprite: {fileID: 0}
+  speakerSprite: {fileID: 0}
   sentence: 
   dialogues: []
