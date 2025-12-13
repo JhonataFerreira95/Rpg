@@ -7,5 +7,7 @@ public class NewBehaviourScript : ScriptableObject
 {
     [Header("Settings")]
     public GameObject actor;
-    
+
+    [Header("Dialogue")]
+    public Sprite speakSprite;
 }
