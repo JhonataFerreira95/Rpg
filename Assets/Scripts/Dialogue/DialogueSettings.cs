@@ -10,4 +10,6 @@ public class NewBehaviourScript : ScriptableObject
 
     [Header("Dialogue")]
     public Sprite speakSprite;
+    public string sentence;
+
 }
