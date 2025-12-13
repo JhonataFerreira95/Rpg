@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 [CreateAssetMenu(fileName = "New Dialogue", menuName = "New Dialogue/Dialogue")]
-public class NewBehaviourScript : ScriptableObject
+public class DialogueSettings : ScriptableObject
 {
     [Header("Settings")]
     public GameObject actor;
@@ -32,3 +32,17 @@ public class Langueges
     public string english;
     public string spanish;
 }
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(DialogueSettings))]
+public class BulderEditor : Editor
+{
+    public override void OnInspectorGUI()
+    {
+        DrawDefaultInspector();
+
+        
+    }
+}
+
+#endif
