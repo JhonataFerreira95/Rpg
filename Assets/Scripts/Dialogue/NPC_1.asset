@@ -9,6 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 0a665a33de4d6b245b4ad5aa2cf208ec, type: 3}
   m_Name: NPC_1
-  m_EditorClassIdentifier: Assembly-CSharp::NewBehaviourScript
+  m_EditorClassIdentifier: 
+  actor: {fileID: 0}
+  speakSprite: {fileID: 0}
+  sentence: 
+  dialogues: []

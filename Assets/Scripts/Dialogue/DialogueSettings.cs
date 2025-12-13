@@ -22,11 +22,11 @@ public class Sentences
 {
     public string actorName;
     public Sprite profile;
-    public Langueges sentence;
+    public Languages sentence;
 }
 
 [System.Serializable]
-public class Langueges
+public class Languages
 {
     public string portuguese;
     public string english;
@@ -35,7 +35,7 @@ public class Langueges
 
 #if UNITY_EDITOR
 [CustomEditor(typeof(DialogueSettings))]
-public class BulderEditor : Editor
+public class BuilderEditor : Editor
 {
     public override void OnInspectorGUI()
     {
@@ -43,12 +43,23 @@ public class BulderEditor : Editor
 
         DialogueSettings ds = (DialogueSettings)target;
 
-        Langueges l = new Langueges();
-        l .portuguese = ds.sentence;
+        Languages l = new Languages();
+        l.portuguese = ds.sentence;
 
         Sentences s = new Sentences();
         s.profile = ds.speakSprite;
         s.sentence = l;
+
+        if(GUILayout.Button("Create Dialogue"))
+        {
+            if(ds.sentence != "")
+            {
+                ds.dialogues.Add(s);
+
+                ds.speakSprite = null;
+                ds.sentence = "";
+            }
+        }
     }
 }
 
