@@ -13,3 +13,13 @@ public class NewBehaviourScript : ScriptableObject
     public string sentence;
 
 }
+
+public class Sentences
+{
+    
+}
+
+public class Langueges
+{
+    
+}
