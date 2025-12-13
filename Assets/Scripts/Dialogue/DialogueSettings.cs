@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="", menuName ="")]
+[CreateAssetMenu(fileName = "New Dialogue", menuName = "New Dialogue/Dialogue")]
 public class NewBehaviourScript : ScriptableObject
 {
     
