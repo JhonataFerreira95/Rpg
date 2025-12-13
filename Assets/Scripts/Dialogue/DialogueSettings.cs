@@ -12,8 +12,11 @@ public class NewBehaviourScript : ScriptableObject
     public Sprite speakSprite;
     public string sentence;
 
+    public List<Sentences> dialogues = new List<Sentences>();
+
 }
 
+[System.Serializable]
 public class Sentences
 {
     public string actorName;
@@ -21,6 +24,7 @@ public class Sentences
     public Langueges sentence;
 }
 
+[System.Serializable]
 public class Langueges
 {
     public string portuguese;
