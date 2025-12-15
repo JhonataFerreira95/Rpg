@@ -29,7 +29,6 @@ IFRN RPG/
 │   └── Prefabs/
 │   └── Scenes/
 │       └── Lógica em c#/
-│       └── Script/
 │   └── Script/
 │   └── Sprites/
 │   └── UI\Dialogue
