@@ -34,7 +34,8 @@ public class DialogueControl : MonoBehaviour
     {
         foreach(char letter in sentences[index].ToCharArray())
         {
-            
+            speechText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
         }  
     }
 }
