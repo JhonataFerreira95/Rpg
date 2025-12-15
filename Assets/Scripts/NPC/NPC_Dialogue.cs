@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NPC_Dialogue : MonoBehaviour
@@ -14,6 +15,11 @@ public class NPC_Dialogue : MonoBehaviour
 
     private List<string> sentences = new List<string>();
 
+    private void start()
+    {
+        GetNPCInfo();
+    }
+
     // Update é chamado a cada frame
     void Update()
     {
@@ -23,7 +29,7 @@ public class NPC_Dialogue : MonoBehaviour
         }
     }
 
-    void GetTexts()
+    void GetNPCInfo()
     {
         for(int i = 0; i < dialogue.dialogues.Count; i++)
         {
