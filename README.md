@@ -34,7 +34,7 @@ IFRN RPG/
 │   └── UI\Dialogue
 ├── Logs/
 ├── Packages/
-├── Ruby fundamentos/
+├── UserSettings/
 │   ├── layouts/
 │   └── Search.settings
 ├── .gitattributes
