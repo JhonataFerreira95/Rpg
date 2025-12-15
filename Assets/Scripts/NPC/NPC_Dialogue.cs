@@ -15,9 +15,9 @@ public class NPC_Dialogue : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+       ShowDialogue(); 
     }
 
 
@@ -27,12 +27,17 @@ public class NPC_Dialogue : MonoBehaviour
 
         if(hit != null)
         {
-            Debug.Log("player na area de colisão");
+            Debug.Log("player na área de colisão");
         }
         else
         {
             
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, dialogueRange);
     }
 
 }
