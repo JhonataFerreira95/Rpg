@@ -6,20 +6,35 @@ using UnityEngine.UI;
 public class DialogueControl : MonoBehaviour
 {
     [Header("Components")]
-    public GameObject dialogueObj;
-    public Image ProfileSprite;
-    public Text speechText;
-    public Text actorNameText;
+    public GameObject dialogueObj; // Janela do dialogo
+    public Image ProfileSprite; // sprite do perfil
+    public Text speechText; // texto da fala
+    public Text actorNameText; // nome npc
 
-    // Start is called before the first frame update
+    [Header("Settings")]
+    public float typingSpeed; // velocidade da fala
+
+    // Variáveis de controle
+
+    private bool isShowing; // se a janela está visível
+    private int index; // index das sentenças 
+    private string[] sentences;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         
+    }
+
+    IEnumerator TypeSentence()
+    {
+        foreach(char letter in sentences[index].ToCharArray())
+        {
+            
+        }  
     }
 }
