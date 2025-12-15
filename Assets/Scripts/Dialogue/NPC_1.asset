@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a665a33de4d6b245b4ad5aa2cf208ec, type: 3}
   m_Name: NPC_1
   m_EditorClassIdentifier: 
-  actor: {fileID: 0}
+  actor: {fileID: 6048881831309033916, guid: d9221ecca4f9e9343b7c050abe4606b1, type: 3}
   speakerSprite: {fileID: 0}
   sentence: 
   dialogues: []
