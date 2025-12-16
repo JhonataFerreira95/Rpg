@@ -75,6 +75,7 @@ public class DialogueControl : MonoBehaviour
                 index = 0;
                 dialogueObj.SetActive(false);
                 sentences = null;
+                isShowing = false;
             }
         }
     }
