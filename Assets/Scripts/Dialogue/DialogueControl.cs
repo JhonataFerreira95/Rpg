@@ -1,10 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueControl : MonoBehaviour
 {
+    [System.Serializable]
+    public enum idiom
+    {
+        pt,
+        eng,
+        spa 
+    }
+
+    public idiom language;
+
     [Header("Components")]
     public GameObject dialogueObj; // Janela do dialogo
     public Image ProfileSprite; // sprite do perfil
