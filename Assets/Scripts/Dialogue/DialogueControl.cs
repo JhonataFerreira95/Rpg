@@ -50,7 +50,22 @@ public class DialogueControl : MonoBehaviour
     // pular para próxima frase/fala
     public void NextSentence()
     {
-        
+        if(speechText.text == sentences[index])
+        {
+            if(index < sentences.Length - 1)
+            {
+                index++;
+                speechText.text = "";
+                StartCoroutine(TypeSentence());
+            }
+            else // Quando terminam os textos
+            {
+                speechText.text = "";
+                index = 0;
+                dialogueObj.SetActive(false);
+                sentences = null;
+            }
+        }
     }
 
     // chamar a falar do npc
