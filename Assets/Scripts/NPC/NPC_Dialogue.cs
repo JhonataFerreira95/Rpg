@@ -15,7 +15,7 @@ public class NPC_Dialogue : MonoBehaviour
 
     private List<string> sentences = new List<string>();
 
-    private void start()
+    private void Start()
     {
         GetNPCInfo();
     }
@@ -23,7 +23,7 @@ public class NPC_Dialogue : MonoBehaviour
     // Update é chamado a cada frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerHit)
+        if(Input.GetKeyDown(KeyCode.E) && playerHit)
         {
             DialogueControl.instance.Speech(sentences.ToArray());
         }
