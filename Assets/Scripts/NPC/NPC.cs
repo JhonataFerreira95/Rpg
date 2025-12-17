@@ -8,11 +8,13 @@ public class NPC : MonoBehaviour
     public float speed;
     private float initialSpeed;
     private int index;
+    private Animator anim;
     public List<Transform> paths = new List<Transform>();
 
     private void Start()
     {
         initialSpeed = speed;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,11 +22,13 @@ public class NPC : MonoBehaviour
     {
         if (DialogueControl.instance.isShowing)
         {
-            speed = 0;
+            speed = 0f;
+            anim.SetBool("isWalking", false);
         }
         else
         {
             speed = initialSpeed;
+            anim.SetBool("isWalking", true);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed * Time.deltaTime);
