@@ -9,15 +9,13 @@ public class NPC : MonoBehaviour
     private int index;
     public List<Transform> paths = new List<Transform>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed * Time.deltaTime);
+
+        if()
     }
+
 }
+
