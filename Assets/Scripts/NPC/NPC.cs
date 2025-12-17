@@ -10,6 +10,11 @@ public class NPC : MonoBehaviour
     private int index;
     public List<Transform> paths = new List<Transform>();
 
+    private void Start()
+    {
+        initialSpeed = speed;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +24,7 @@ public class NPC : MonoBehaviour
         }
         else
         {
-            speed = 
+            speed = initialSpeed;
         }
 
         transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed * Time.deltaTime);
