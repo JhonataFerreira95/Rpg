@@ -6,12 +6,22 @@ public class NPC : MonoBehaviour
 {
 
     public float speed;
+    private float initialSpeed;
     private int index;
     public List<Transform> paths = new List<Transform>();
 
     // Update is called once per frame
     void Update()
     {
+        if (DialogueControl.instance.isShowing)
+        {
+            speed = 0;
+        }
+        else
+        {
+            speed = 
+        }
+
         transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed * Time.deltaTime);
 
         if(Vector2.Distance(transform.position, paths[index].position) < 0.1f)
