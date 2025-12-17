@@ -15,4 +15,22 @@ MonoBehaviour:
   actor: {fileID: 6048881831309033916, guid: d9221ecca4f9e9343b7c050abe4606b1, type: 3}
   speakerSprite: {fileID: 0}
   sentence: 
-  dialogues: []
+  dialogues:
+  - actorName: "Sauda\xE7\xE3o"
+    profile: {fileID: -1932989242, guid: 36fe4b0621acd5945a8887b6c9f2a448, type: 3}
+    sentence:
+      portuguese: Oi meu chapa! O que busca nessas terras?
+      english: Hey buddy! What are you looking for in these parts?
+      spanish: "\xA1Hola, amigo! \xBFQu\xE9 buscas por estos lares?"
+  - actorName: Sobre o Lula
+    profile: {fileID: -1932989242, guid: 36fe4b0621acd5945a8887b6c9f2a448, type: 3}
+    sentence:
+      portuguese: Faz o L amigo
+      english: Make the L Friend
+      spanish: Haz el L amigo
+  - actorName: Dinheiro
+    profile: {fileID: -1932989242, guid: 36fe4b0621acd5945a8887b6c9f2a448, type: 3}
+    sentence:
+      portuguese: "MIM D\xCA DINHEIROS"
+      english: GIVE ME MONEY
+      spanish: DAME DINERO
