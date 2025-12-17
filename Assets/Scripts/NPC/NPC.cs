@@ -14,7 +14,17 @@ public class NPC : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, paths[index].position, speed * Time.deltaTime);
 
-        if()
+        if(Vector2.Distance(transform.position, paths[index].position) < 0.1f)
+        {
+            if(index < paths.Count - 1)
+            {
+                index++;
+            }
+            else
+            {
+                index = 0;
+            }
+        }
     }
 
 }
