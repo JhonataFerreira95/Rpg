@@ -68,10 +68,12 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isCutting = true;
+            speed = 0f;
         }
         if (Input.GetMouseButtonUp(0))
         {
             isCutting = false;
+            speed = initialSpeed;
         }
     }
 

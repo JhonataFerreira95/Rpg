@@ -55,7 +55,7 @@ public class PlayerAnim : MonoBehaviour
 
             if (player.isCutting)
             {
-                
+               anim.SetInteger("transition", 3);
             }
         }
 
