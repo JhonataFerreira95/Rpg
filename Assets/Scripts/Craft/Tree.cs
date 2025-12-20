@@ -6,6 +6,7 @@ public class Tree : MonoBehaviour
 {
 
     [SerializeField] private float treeHealth;
+    [SerializeField] private Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +22,12 @@ public class Tree : MonoBehaviour
 
     public void OnHit()
     {
-        
+        treeHealth--;
+
+        if(treeHealth <= 0)
+        {
+            //cria o toco e instância os drops
+            
+        }
     }
 }
