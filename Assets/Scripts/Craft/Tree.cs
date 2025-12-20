@@ -23,6 +23,9 @@ public class Tree : MonoBehaviour
 
     private void TriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.CompareTag("Axe"))
+        {
+            OnHit();
+        }
     }
 }
