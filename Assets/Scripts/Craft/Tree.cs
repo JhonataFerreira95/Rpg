@@ -8,18 +8,6 @@ public class Tree : MonoBehaviour
     [SerializeField] private float treeHealth;
     [SerializeField] private Animator anim;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void OnHit()
     {
         treeHealth--;
@@ -31,5 +19,10 @@ public class Tree : MonoBehaviour
             //cria o toco e instância os drops
             anim.SetTrigger("cut");
         }
+    }
+
+    private void TriggerEnter2D(Collider2D collision)
+    {
+        
     }
 }
