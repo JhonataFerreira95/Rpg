@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Tree : MonoBehaviour
 {
+
+    [SerializeField] private float treeHealth;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -12,6 +15,11 @@ public class Tree : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        
+    }
+
+    public void OnHit()
     {
         
     }
