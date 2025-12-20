@@ -24,10 +24,12 @@ public class Tree : MonoBehaviour
     {
         treeHealth--;
 
+        anim.SetTrigger("isHit");
+
         if(treeHealth <= 0)
         {
             //cria o toco e instância os drops
-            
+            anim.SetTrigger("cut");
         }
     }
 }
