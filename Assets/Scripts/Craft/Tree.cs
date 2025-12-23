@@ -18,7 +18,7 @@ public class Tree : MonoBehaviour
         if(treeHealth <= 0)
         {
             //cria o toco e instância os drops
-            Instantiate(woodPrefab, transform.position,  transform.rotation);
+            Instantiate(woodPrefab, transform.position + new Vector3(Random.Range(-0.5f, 0.5f), Random.Range(-0.5f, 0.5f), 0f),  transform.rotation);
             anim.SetTrigger("cut");
         }
     }
