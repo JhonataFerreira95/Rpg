@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerItens : MonoBehaviour
 {
+
+    public int totalWood;
+
     // Start is called before the first frame update
     void Start()
     {
