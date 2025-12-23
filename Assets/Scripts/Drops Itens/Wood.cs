@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class Wood : MonoBehaviour
 {
+
+    [SerializeField] private float spped;
+    [SerializeField] private float timeMove;
+
+    private float timeCount;
+
+    
     // Start is called before the first frame update
     void Start()
     {
