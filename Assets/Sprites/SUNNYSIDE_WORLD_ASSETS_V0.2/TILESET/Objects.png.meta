@@ -1547,7 +1547,7 @@ TextureImporter:
         serializedVersion: 2
         x: 16
         y: 576
-        width: 32
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1676,7 +1676,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1684,6 +1684,27 @@ TextureImporter:
       bones: []
       spriteID: 8f2199176cfd01243a54786e64c651e0
       internalID: -1609950233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Objects_76
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 576
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1ee6e92ab45254ab23eb81ccb07184
+      internalID: -311936828
       vertices: []
       indices: 
       edges: []
@@ -1773,6 +1794,7 @@ TextureImporter:
       Objects_73: 1662953556
       Objects_74: -1869818314
       Objects_75: -1609950233
+      Objects_76: -311936828
       Objects_8: 760996899
       Objects_9: -517802037
   spritePackingTag: 
