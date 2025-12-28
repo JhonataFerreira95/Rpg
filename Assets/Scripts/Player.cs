@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rig;
 
+    private PlayerItens playerItens;
+
     private float initialSpeed;
     private bool _isRunning;
     private bool _isRolling;
@@ -58,6 +60,8 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        playerItens = GetComponent<PlayerItens>();
+
         initialSpeed = speed;
     }
 
@@ -97,7 +101,7 @@ public class Player : MonoBehaviour
 
     void OnWatering()
     {
-        if(handlingObj == 2)
+        if(handlingObj == 2 && playerItens.currentWater > 0)
         {
             if (Input.GetMouseButtonDown(0))
             {
