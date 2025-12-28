@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
+
+    [SerializeField] private bool detectingPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,21 @@ public class Water : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            detectingPlayer = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Player"))
+        {
+            detectingPlayer = false;
+        }
     }
 }
