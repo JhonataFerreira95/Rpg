@@ -16,7 +16,10 @@ public class Water : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
+        {
+            
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
