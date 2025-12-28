@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private bool _isRolling;
     private bool _isCutting;
     private bool _isDigging;
+    private bool _isWatering;
     private Vector2 _direction;
     private int handlingObj;
 
@@ -48,6 +49,12 @@ public class Player : MonoBehaviour
         set { _isDigging = value; }
     }
 
+    public bool isWatering
+    {
+        get { return _isWatering;}
+        set { _isWatering = value; }
+    }
+
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -67,11 +74,17 @@ public class Player : MonoBehaviour
             handlingObj = 1;
         }
 
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            handlingObj = 2;
+        }
+
         OnInput();
         OnRun(); 
         OnRolling();
         OnCutting();
         OnDig();
+        OnWatering();
 
     }
 
@@ -81,6 +94,23 @@ public class Player : MonoBehaviour
     }
 
     #region Movement
+
+    void OnWatering()
+    {
+        if(handlingObj == 2)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                isWatering = true;
+                speed = 0f;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                isWatering = false;
+                speed = initialSpeed;
+            }
+        }
+    }
 
     void OnDig()
     {

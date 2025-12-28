@@ -8,7 +8,7 @@ public class PlayerItens : MonoBehaviour
     public int totalWood;
     public int currentWater;
 
-    private int waterLimit = 50;
+    private int waterLimit = 55;
     public void WaterLimit(int Water)
     {   
        if(currentWater < waterLimit)
