@@ -101,17 +101,21 @@ public class Player : MonoBehaviour
 
     void OnWatering()
     {
-        if(handlingObj == 2 && playerItens.currentWater > 0)
+        if(handlingObj == 2)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && playerItens.currentWater > 0)
             {
                 isWatering = true;
                 speed = 0f;
             }
-            if (Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0) || playerItens.currentWater < 0)
             {
                 isWatering = false;
                 speed = initialSpeed;
+            }
+            if (isWatering)
+            {
+                playerItens.currentWater -= 0.01f;
             }
         }
     }
