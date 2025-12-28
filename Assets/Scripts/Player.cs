@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private bool _isRolling;
     private bool _isCutting;
     private Vector2 _direction;
+    private int handlingObj;
 
     public Vector2 direction
     {
@@ -48,7 +49,17 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-       
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            handlingObj = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            handlingObj = 2;
+        }
+
         OnInput();
         OnRun(); 
         OnRolling();
