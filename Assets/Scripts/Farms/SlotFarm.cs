@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class SlotFarm : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    [SerializeField] private Sprite hole;
+    [SerializeField] private Sprite carrot;
+    [SerializeField] private int digAmount; // Quantidade de escavação
+
+    public void OnHit()
     {
-        
+        digAmount--;
+
+        if(digAmount <= 0)
+        {
+            //plantar cenoura
+            
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+      if(collision.CompareTag("Axe"))
+        {
+            OnHit();
+        }  
     }
 }
