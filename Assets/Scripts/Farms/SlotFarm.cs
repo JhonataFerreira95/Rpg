@@ -26,11 +26,11 @@ public class SlotFarm : MonoBehaviour
             spriteRenderer.sprite = hole;
         }
 
-        if(digAmount <= 0)
-        {
+        //if(digAmount <= 0)
+        //{
             //plantar cenoura
-            spriteRenderer.sprite = carrot;
-        }
+            //spriteRenderer.sprite = carrot;
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
