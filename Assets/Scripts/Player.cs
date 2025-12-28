@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     private bool _isRunning;
     private bool _isRolling;
     private bool _isCutting;
+    private bool _isDigging;
     private Vector2 _direction;
     private int handlingObj;
 
@@ -41,6 +42,12 @@ public class Player : MonoBehaviour
         set { _isCutting = value; }
     }
 
+    public bool isDigging
+    {
+        get { return _isDigging;}
+        set { _isDigging = value; }
+    }
+
     private void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -64,6 +71,7 @@ public class Player : MonoBehaviour
         OnRun(); 
         OnRolling();
         OnCutting();
+        OnDig();
 
     }
 
@@ -74,17 +82,37 @@ public class Player : MonoBehaviour
 
     #region Movement
 
+    void OnDig()
+    {
+        if(handlingObj == 2)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                isDigging = true;
+                speed = 0f;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                isDigging = false;
+                speed = initialSpeed;
+            }
+        }
+    }
+
     void OnCutting()
     {
-        if (Input.GetMouseButtonDown(0))
+        if(handlingObj == 1)
         {
-            isCutting = true;
-            speed = 0f;
-        }
-        if (Input.GetMouseButtonUp(0))
-        {
-            isCutting = false;
-            speed = initialSpeed;
+            if (Input.GetMouseButtonDown(0))
+            {
+                isCutting = true;
+                speed = 0f;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                isCutting = false;
+                speed = initialSpeed;
+            }
         }
     }
 
