@@ -17,9 +17,13 @@ public class SlotFarm : MonoBehaviour
     private int initialDigAmount;
     private float currentWater;
     private bool dugHole;
+    
+    PlayerItens playerItens;
 
     private void Start()
     {
+        playerItens = FindAnyObjectByType<PlayerItens>();
+
         initialDigAmount = digAmount;
     }
 
@@ -35,6 +39,13 @@ public class SlotFarm : MonoBehaviour
             if(currentWater >= waterAmount)
             {
                 spriteRenderer.sprite = carrot;
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    spriteRenderer.sprite = hole;
+                    playerItens.carrots++;
+                    currentWater = 0f;
+                }
             }
         }
     }
