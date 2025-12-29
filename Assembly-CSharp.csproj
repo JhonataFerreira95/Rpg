@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scenes\lógica em c#\03_switch.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scenes\lógica em c#\03_if_else.cs" />
+    <Compile Include="Assets\Scripts\Farms\Water.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\SimpleElevator.cs" />
     <Compile Include="Assets\Scripts\NPC\NPC_Dialogue.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\FadeOutNearbyObjects\CinemachineFadeOutNearbyObjects.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\Scripts\Drops Itens\Wood.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\2D\LoseSightWhenTargetsFallsOffThePlatform.cs" />
     <Compile Include="Assets\Scenes\lógica em c#\04_for_foreach_array.cs" />
+    <Compile Include="Assets\Scripts\Farms\SlotFarm.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\2D\MouseScrollZoom2D.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\MixingCameraBlend.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetProperty.cs" />
@@ -107,8 +109,6 @@
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\BossCamera\BossLookAt.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\Scripts\Farms\Water.cs" />
-    <Compile Include="Assets\Scripts\Farms\SlotFarm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\FadeOutNearbyObjects\FadeOut.shader" />
