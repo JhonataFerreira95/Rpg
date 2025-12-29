@@ -16,6 +16,7 @@ public class SlotFarm : MonoBehaviour
 
     private int initialDigAmount;
     private float currentWater;
+    private bool dugHole;
 
     private void Start()
     {
@@ -24,14 +25,17 @@ public class SlotFarm : MonoBehaviour
 
     private void Update()
     {
-        if (detecting)
+        if (dugHole)
         {
-            currentWater += 0.01f;
-        }
-        
-        if(currentWater >= waterAmount)
-        {
-            spriteRenderer.sprite = carrot;
+            if (detecting)
+            {
+                currentWater += 0.01f;
+            }
+            
+            if(currentWater >= waterAmount)
+            {
+                spriteRenderer.sprite = carrot;
+            }
         }
     }
 
@@ -42,6 +46,7 @@ public class SlotFarm : MonoBehaviour
         if(digAmount <= initialDigAmount / 2)
         {
             spriteRenderer.sprite = hole;
+            dugHole = true;
         }
 
         //if(digAmount <= 0)
