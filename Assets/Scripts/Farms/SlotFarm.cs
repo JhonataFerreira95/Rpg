@@ -11,14 +11,28 @@ public class SlotFarm : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private int digAmount; // Quantidade de escavação
+    [SerializeField] private float waterAmount; // Total de água para nascer uma cenoura
     [SerializeField] private bool detecting;
 
     private int initialDigAmount;
-    
+    private float currentWater;
 
     private void Start()
     {
         initialDigAmount = digAmount;
+    }
+
+    private void Update()
+    {
+        if (detecting)
+        {
+            currentWater += 0.01f;
+        }
+        
+        if(currentWater >= waterAmount)
+        {
+            spriteRenderer.sprite = carrot;
+        }
     }
 
     public void OnHit()
