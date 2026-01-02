@@ -12,16 +12,19 @@ public class HUDController : MonoBehaviour
     [SerializeField] private Image CarrotUIBar;
 
     [Header("Tools")]
-    [SerializeField] private Image AxeUI;
-    [SerializeField] private Image ShovelUI;
-    [SerializeField] private Image BucketUI;
+    // [SerializeField] private Image AxeUI;
+    // [SerializeField] private Image ShovelUI;
+    // [SerializeField] private Image BucketUI;
     [SerializeField] private Color color;
+    public List<Image> toolsUI = new List<Image>();
 
     private PlayerItens playerItens;
+    private Player player;
 
     private void Awake()
     {
         playerItens = FindAnyObjectByType<PlayerItens>();
+        player = playerItens.GetComponent<Player>();
     }
 
     // Start is called before the first frame update
@@ -38,5 +41,7 @@ public class HUDController : MonoBehaviour
         WaterUIBar.fillAmount = playerItens.currentWater / playerItens.waterLimit;
         WoodUIBar.fillAmount = playerItens.totalWood / playerItens.woodLimit;
         CarrotUIBar.fillAmount = playerItens.carrots / playerItens.carrotLimit;
+
+        toolsUI[player.handlingObj].color = color;
     }
 }
