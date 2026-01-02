@@ -5,11 +5,16 @@ using UnityEngine;
 public class PlayerItens : MonoBehaviour
 {
 
+    [Header("Amounts")]
     public int totalWood;
     public int carrots;
     public float currentWater;
 
-    private float waterLimit = 55;
+    [Header("Limits")]
+    public float waterLimit = 50;
+    public float woodLimit = 10;
+    public float carrotLimit = 15;
+
     public void WaterLimit(float Water)
     {   
        if(currentWater < waterLimit)
