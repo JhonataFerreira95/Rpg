@@ -15,6 +15,7 @@ public class HUDController : MonoBehaviour
     [SerializeField] private Image AxeUI;
     [SerializeField] private Image ShovelUI;
     [SerializeField] private Image BucketUI;
+    [SerializeField] private Color color;
 
     private PlayerItens playerItens;
 
