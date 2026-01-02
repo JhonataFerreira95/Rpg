@@ -6,9 +6,15 @@ using UnityEngine.UI;
 public class HUDController : MonoBehaviour
 {
 
+    [Header("Items")]
     [SerializeField] private Image WaterUIBar;
     [SerializeField] private Image WoodUIBar;
     [SerializeField] private Image CarrotUIBar;
+
+    [Header("Tools")]
+    [SerializeField] private Image AxeUI;
+    [SerializeField] private Image ShovelUI;
+    [SerializeField] private Image BucketUI;
 
     private PlayerItens playerItens;
 
