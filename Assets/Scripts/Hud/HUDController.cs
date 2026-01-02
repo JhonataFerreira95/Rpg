@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +16,8 @@ public class HUDController : MonoBehaviour
     // [SerializeField] private Image AxeUI;
     // [SerializeField] private Image ShovelUI;
     // [SerializeField] private Image BucketUI;
-    [SerializeField] private Color color;
+    [SerializeField] private Color selectColor;
+    [SerializeField] private Color alphaColor;
     public List<Image> toolsUI = new List<Image>();
 
     private PlayerItens playerItens;
@@ -42,6 +44,18 @@ public class HUDController : MonoBehaviour
         WoodUIBar.fillAmount = playerItens.totalWood / playerItens.woodLimit;
         CarrotUIBar.fillAmount = playerItens.carrots / playerItens.carrotLimit;
 
-        toolsUI[player.handlingObj].color = color;
+        //toolsUI[player.handlingObj].color = selectColor;
+
+        for (int i = 0; i < toolsUI.Count; i++)
+        {
+            if(i == player.handlingObj)
+            {
+                toolsUI[i].color = selectColor;
+            }
+            else
+            {
+                toolsUI[i].color = alphaColor;  
+            }
+        }
     }
 }
