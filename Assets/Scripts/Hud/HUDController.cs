@@ -14,7 +14,9 @@ public class HUDController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        WaterUIBar.fillAmount = 0f;
+        WoodUIBar.fillAmount = 0f;
+        CarrotUIBar.fillAmount = 0f;
     }
 
     // Update is called once per frame
