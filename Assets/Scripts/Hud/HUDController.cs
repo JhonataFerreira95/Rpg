@@ -28,6 +28,8 @@ public class HUDController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        WaterUIBar.fillAmount = playerItens.currentWater / playerItens.waterLimit;
+        WoodUIBar.fillAmount = playerItens.totalWood / playerItens.woodLimit;
+        CarrotUIBar.fillAmount = playerItens.carrots / playerItens.carrotLimit;
     }
 }
