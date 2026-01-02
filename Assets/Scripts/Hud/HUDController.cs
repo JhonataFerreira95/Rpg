@@ -10,6 +10,12 @@ public class HUDController : MonoBehaviour
     [SerializeField] private Image WoodUIBar;
     [SerializeField] private Image CarrotUIBar;
 
+    private PlayerItens playerItens;
+
+    private void Awake()
+    {
+        playerItens = FindAnyObjectByType<PlayerItens>();
+    }
 
     // Start is called before the first frame update
     void Start()
