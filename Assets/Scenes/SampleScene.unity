@@ -27800,7 +27800,8 @@ MonoBehaviour:
   WaterUIBar: {fileID: 1577638992}
   WoodUIBar: {fileID: 1598659094}
   CarrotUIBar: {fileID: 551876620}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  selectColor: {r: 1, g: 0.995283, b: 0.995283, a: 1}
+  alphaColor: {r: 1, g: 1, b: 1, a: 0.49019608}
   toolsUI:
   - {fileID: 31400044}
   - {fileID: 651214207}
