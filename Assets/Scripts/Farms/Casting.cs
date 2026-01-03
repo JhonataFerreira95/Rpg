@@ -24,7 +24,7 @@ public class Casting : MonoBehaviour
         }
     }
 
-    void OnCasting()
+    public void OnCasting()
     {
         int randomValue = Random.Range(1,100);
 
