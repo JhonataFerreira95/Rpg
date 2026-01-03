@@ -20,7 +20,7 @@ public class Casting : MonoBehaviour
     {
         if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
         {
-            OnCasting();
+            
         }
     }
 
