@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Casting : MonoBehaviour
 {
-    [SerializeField] private bool detectingPlayer;
-    [SerializeField] private int waterValue;
+    [SerializeField] private int percentage; // porcentagem de chance de pescar um peixe
 
     private PlayerItens player;
+    private bool detectingPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,18 @@ public class Casting : MonoBehaviour
 
     void OnCasting()
     {
-        
+        int randomValue = Random.Range(1,100);
+
+        if(randomValue <= percentage)
+        {
+            //conseguiu pescar um peixe
+            Debug.Log("pescou");
+        }
+        else
+        {
+            //falhou
+            Debug.Log("n pescou");
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
