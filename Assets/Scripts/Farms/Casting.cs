@@ -20,8 +20,13 @@ public class Casting : MonoBehaviour
     {
         if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
         {
-            player.WaterLimit(waterValue);
+            OnCasting();
         }
+    }
+
+    void OnCasting()
+    {
+        
     }
 
     void OnTriggerEnter2D(Collider2D collision)
