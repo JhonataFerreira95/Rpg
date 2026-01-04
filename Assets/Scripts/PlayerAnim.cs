@@ -77,5 +77,15 @@ public class PlayerAnim : MonoBehaviour
         }
         }
 
+        public void OnCastingStarted()
+        {
+            
+        }
+
+        public void OnCastingEnded()
+        {
+            
+        }
+
     #endregion
 }
