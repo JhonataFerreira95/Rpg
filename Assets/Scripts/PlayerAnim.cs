@@ -81,13 +81,15 @@ public class PlayerAnim : MonoBehaviour
 
     #endregion
 
+    // Esse método é chamado quando o jogador pressiona o botão "E" no lago
     public void OnCastingStarted()
     {
         anim.SetTrigger("isCasting");
     }
 
+    // Esse método é chamado quando termina a animação de pescaria
     public void OnCastingEnded()
     {
-            
+        cast.OnCasting();
     }
 }
