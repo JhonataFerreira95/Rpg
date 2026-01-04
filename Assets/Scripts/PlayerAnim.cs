@@ -85,11 +85,13 @@ public class PlayerAnim : MonoBehaviour
     public void OnCastingStarted()
     {
         anim.SetTrigger("isCasting");
+        player.isPaused = true;
     }
 
     // Esse método é chamado quando termina a animação de pescaria
     public void OnCastingEnded()
     {
         cast.OnCasting();
+        player.isPaused = false;
     }
 }
