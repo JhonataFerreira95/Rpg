@@ -79,7 +79,7 @@ public class PlayerAnim : MonoBehaviour
 
         public void OnCastingStarted()
         {
-            
+            anim.SetTrigger("isCasting");
         }
 
         public void OnCastingEnded()

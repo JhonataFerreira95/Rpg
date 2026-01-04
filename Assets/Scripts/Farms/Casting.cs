@@ -7,12 +7,14 @@ public class Casting : MonoBehaviour
     [SerializeField] private int percentage; // porcentagem de chance de pescar um peixe
 
     private PlayerItens player;
+    private PlayerAnim playerAnim;
     private bool detectingPlayer;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerItens>();
+        playerAnim = player.GetComponent<PlayerAnim>();
     }
 
     // Update is called once per frame
@@ -20,7 +22,7 @@ public class Casting : MonoBehaviour
     {
         if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
         {
-            
+            playerAnim.OnCastingStarted();
         }
     }
 
