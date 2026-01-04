@@ -34,7 +34,7 @@ public class Casting : MonoBehaviour
         if(randomValue <= percentage)
         {
             //conseguiu pescar um peixe
-            Instantiate(fishPrefab, player.transform.position + new Vector3(-2f, 0f, 0f), Quaternion.identity);
+            Instantiate(fishPrefab, player.transform.position + new Vector3(Random.Range(-3f, -1f), 0f, 0f), Quaternion.identity);
             Debug.Log("pescou");
         }
         else
