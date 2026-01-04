@@ -8,12 +8,14 @@ public class PlayerAnim : MonoBehaviour
 
     private Player player;
     private Animator anim;
+    private Casting cast;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Player>();
         anim = GetComponent<Animator>();
+        cast = FindObjectOfType<Casting>();
     }
 
     // Update is called once per frame
@@ -77,15 +79,15 @@ public class PlayerAnim : MonoBehaviour
         }
         }
 
-        public void OnCastingStarted()
-        {
-            anim.SetTrigger("isCasting");
-        }
-
-        public void OnCastingEnded()
-        {
-            
-        }
-
     #endregion
+
+    public void OnCastingStarted()
+    {
+        anim.SetTrigger("isCasting");
+    }
+
+    public void OnCastingEnded()
+    {
+            
+    }
 }
