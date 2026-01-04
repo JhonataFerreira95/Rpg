@@ -5,6 +5,7 @@ using UnityEngine;
 public class Casting : MonoBehaviour
 {
     [SerializeField] private int percentage; // porcentagem de chance de pescar um peixe
+    [SerializeField] private GameObject fishPrefab;
 
     private PlayerItens player;
     private PlayerAnim playerAnim;
@@ -33,6 +34,7 @@ public class Casting : MonoBehaviour
         if(randomValue <= percentage)
         {
             //conseguiu pescar um peixe
+            Instantiate(fishPrefab, player.transform.position + new Vector3(-2f, 0f, 0f), Quaternion.identity);
             Debug.Log("pescou");
         }
         else
