@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class House : MonoBehaviour
-{
+{   
+    [SerializeField] private Sprite houseSprite;
     [SerializeField] private Color starColor;
     [SerializeField] private Color endColor;
     [SerializeField] private float timeAmount;
@@ -25,7 +26,7 @@ public class House : MonoBehaviour
         if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
         {
             isBegining = true;
-            
+
         }
         if(isBegining)
         {

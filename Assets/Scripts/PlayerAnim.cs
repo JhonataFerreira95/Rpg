@@ -94,4 +94,14 @@ public class PlayerAnim : MonoBehaviour
         cast.OnCasting();
         player.isPaused = false;
     }
+
+    public void OnHammeringStart()
+    {
+        anim.SetBool("hammering", true);
+    }
+
+    public void OnHammeringEnded()
+    {
+        anim.SetBool("hammering", false);
+    }
 }
