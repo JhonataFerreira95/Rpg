@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class House : MonoBehaviour
 {   
-    [SerializeField] private Sprite houseSprite;
+    [SerializeField] private Transform point;
+    [SerializeField] private SpriteRenderer houseSprite;
     [SerializeField] private Color starColor;
     [SerializeField] private Color endColor;
     [SerializeField] private float timeAmount;
 
     private bool detectingPlayer;
     private PlayerItens player;
+    private PlayerAnim playerAnim;
     private float timeCount;
     private bool isBegining;
 
@@ -18,6 +20,7 @@ public class House : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerItens>();
+        playerAnim = player.GetComponent<PlayerAnim>();
     }
 
     // Update is called once per frame
@@ -26,7 +29,9 @@ public class House : MonoBehaviour
         if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
         {
             isBegining = true;
-
+            playerAnim.OnHammeringEnded();
+            houseSprite.color = starColor;
+            player.transform.position = point.position;
         }
         if(isBegining)
         {
@@ -34,6 +39,8 @@ public class House : MonoBehaviour
             if(timeCount >= timeAmount)
             {
                 //casa é finalizda
+                playerAnim.OnHammeringEnded();
+                houseSprite.color = endColor;
             }
         }
     }
