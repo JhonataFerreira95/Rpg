@@ -29,7 +29,7 @@ public class House : MonoBehaviour
         if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
         {
             isBegining = true;
-            playerAnim.OnHammeringEnded();
+            playerAnim.OnHammeringStart();
             houseSprite.color = starColor;
             player.transform.position = point.position;
         }
