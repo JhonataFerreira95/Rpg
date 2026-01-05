@@ -20,24 +20,28 @@ public class House : MonoBehaviour
     private PlayerAnim playerAnim;
     private float timeCount;
     private bool isBegining;
+    private PlayerItens playerItens;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
         playerAnim = player.GetComponent<PlayerAnim>();
+        playerItens = player.GetComponent<PlayerItens>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(detectingPlayer && Input.GetKeyDown(KeyCode.E))
-        {
+        if(detectingPlayer && Input.GetKeyDown(KeyCode.E) && playerItens.totalWood >= woodAmount)
+        {   
+            //Construção é incializada
             isBegining = true;
             playerAnim.OnHammeringStart();
             houseSprite.color = starColor;
             player.transform.position = point.position;
             player.isPaused = true;
+            playerItens.totalWood -= woodAmount;
         }
         if(isBegining)
         {
