@@ -11,7 +11,7 @@ public class House : MonoBehaviour
     [SerializeField] private float timeAmount;
 
     private bool detectingPlayer;
-    private PlayerItens player;
+    private Player player;
     private PlayerAnim playerAnim;
     private float timeCount;
     private bool isBegining;
@@ -19,7 +19,7 @@ public class House : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = FindObjectOfType<PlayerItens>();
+        player = FindObjectOfType<Player>();
         playerAnim = player.GetComponent<PlayerAnim>();
     }
 
@@ -32,6 +32,7 @@ public class House : MonoBehaviour
             playerAnim.OnHammeringStart();
             houseSprite.color = starColor;
             player.transform.position = point.position;
+            player.isPaused = true;
         }
         if(isBegining)
         {
@@ -41,6 +42,7 @@ public class House : MonoBehaviour
                 //casa é finalizda
                 playerAnim.OnHammeringEnded();
                 houseSprite.color = endColor;
+                player.isPaused = false;
             }
         }
     }
