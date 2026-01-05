@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class House : MonoBehaviour
 {   
+    [SerializeField] private GameObject houseColl;
     [SerializeField] private Transform point;
     [SerializeField] private SpriteRenderer houseSprite;
     [SerializeField] private Color starColor;
@@ -43,6 +44,7 @@ public class House : MonoBehaviour
                 playerAnim.OnHammeringEnded();
                 houseSprite.color = endColor;
                 player.isPaused = false;
+                houseColl.SetActive(true);
             }
         }
     }
