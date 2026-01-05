@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class House : MonoBehaviour
 {   
-    [SerializeField] private GameObject houseColl;
-    [SerializeField] private Transform point;
-    [SerializeField] private SpriteRenderer houseSprite;
+    [Header("Amounts")]
+    [SerializeField] private int woodAmount;
+    [SerializeField] private float timeAmount;
     [SerializeField] private Color starColor;
     [SerializeField] private Color endColor;
-    [SerializeField] private float timeAmount;
+
+    [Header("Components")]
+    [SerializeField] private SpriteRenderer houseSprite;
+    [SerializeField] private Transform point;
+    [SerializeField] private GameObject houseColl;
 
     private bool detectingPlayer;
     private Player player;
