@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class House : MonoBehaviour
 {
+    [SerializeField] private Color starColor;
+    [SerializeField] private Color endColor;
     private bool detectingPlayer;
     private PlayerItens player;
 
