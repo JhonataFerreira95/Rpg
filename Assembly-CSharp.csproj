@@ -1160,6 +1160,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AimingRig.csproj" />
+    <ProjectReference Include="NavMeshComponents.csproj" />
+    <ProjectReference Include="NavMeshComponentsEditor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

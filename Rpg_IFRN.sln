@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AimingRig", "AimingRig.csproj", "{0674504D-A37C-D4CC-597D-8C5FEB234558}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponents", "NavMeshComponents.csproj", "{208EC8A8-CD64-280C-F2C8-B4E5D114C47F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavMeshComponentsEditor", "NavMeshComponentsEditor.csproj", "{EE61A21E-9447-9E2F-9ADE-936065A4DFE8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{0674504D-A37C-D4CC-597D-8C5FEB234558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0674504D-A37C-D4CC-597D-8C5FEB234558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0674504D-A37C-D4CC-597D-8C5FEB234558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{208EC8A8-CD64-280C-F2C8-B4E5D114C47F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{208EC8A8-CD64-280C-F2C8-B4E5D114C47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{208EC8A8-CD64-280C-F2C8-B4E5D114C47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{208EC8A8-CD64-280C-F2C8-B4E5D114C47F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE61A21E-9447-9E2F-9ADE-936065A4DFE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE61A21E-9447-9E2F-9ADE-936065A4DFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE61A21E-9447-9E2F-9ADE-936065A4DFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE61A21E-9447-9E2F-9ADE-936065A4DFE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
