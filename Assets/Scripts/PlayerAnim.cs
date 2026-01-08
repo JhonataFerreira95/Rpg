@@ -113,7 +113,7 @@ public class PlayerAnim : MonoBehaviour
         if(hit != null)
         {
             // Atacou o inimigo
-            Debug.Log("acertou");
+            hit.GetComponent<AnimationControl>().OnHit();
         }
     }
 
