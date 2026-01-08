@@ -44,6 +44,8 @@ public class AnimationControl : MonoBehaviour
         {
             skeleton.isDead = true;
             anim.SetTrigger("death");
+
+            Destroy(skeleton.gameObject, 1f);
         }
         else
         {
