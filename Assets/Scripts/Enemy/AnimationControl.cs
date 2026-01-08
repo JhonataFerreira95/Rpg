@@ -25,12 +25,17 @@ public class AnimationControl : MonoBehaviour
 
         if(hit != null)
         {
-            //Detecta coli~sao com o player
+            //Detecta colisão com o player
             Debug.Log("bateu");
         }
         else
         {
             
         }
+    }
+
+    private void OawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, radius);
     }
 }
