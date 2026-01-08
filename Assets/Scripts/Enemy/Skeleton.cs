@@ -21,5 +21,15 @@ public class Skeleton : MonoBehaviour
     void Update()
     {
         agent.SetDestination(player.transform.position);
+
+        if(Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
+        {
+            //Chegou próximo do player, skeleton idle
+
+        }
+        else 
+        {
+            //skeleton walking
+        }
     }
 }
