@@ -77,19 +77,24 @@ public class Player : MonoBehaviour
     {
         if(!isPaused)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if(Input.GetKeyDown(KeyCode.Alpha1))
             {
                 handlingObj = 0;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            if(Input.GetKeyDown(KeyCode.Alpha2))
             {
                 handlingObj = 1;
             }
 
-            if (Input.GetKeyDown(KeyCode.Alpha3))
+            if(Input.GetKeyDown(KeyCode.Alpha3))
             {
                 handlingObj = 2;
+            }
+
+            if(Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                handlingObj = 4;
             }
 
             OnInput();
@@ -120,10 +125,12 @@ public class Player : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 isAttacking = true;
+                speed = 0f;
             }
             if (Input.GetMouseButtonUp(0))
             {
                 isAttacking = false;
+                speed = initialSpeed;
             }
         }
     }
