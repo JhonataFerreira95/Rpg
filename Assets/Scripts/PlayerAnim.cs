@@ -4,7 +4,11 @@ using UnityEngine;
 using UnityEngine.Animations;
 
 public class PlayerAnim : MonoBehaviour
-{
+{   
+    [Header("Attack Settings")]
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private float radius;
+    [SerializeField] private LayerMask enemyLayer;
 
     private Player player;
     private Animator anim;
@@ -92,6 +96,20 @@ public class PlayerAnim : MonoBehaviour
             anim.SetInteger("transition", 2);
         }
         }
+
+    #endregion
+
+    #region Attack
+
+    public void OnAttack()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, enemyLayer);
+
+        if(hit != null)
+        {
+            // Atacou o inimigo
+        }
+    }
 
     #endregion
 
