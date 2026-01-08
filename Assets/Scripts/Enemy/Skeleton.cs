@@ -8,6 +8,8 @@ public class Skeleton : MonoBehaviour
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private AnimationControl animControl;
 
+    public float heath;
+
     private Player player;
 
     // Start is called before the first frame update

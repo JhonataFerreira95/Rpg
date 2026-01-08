@@ -7,13 +7,16 @@ public class AnimationControl : MonoBehaviour
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float radius;
     [SerializeField] private LayerMask playerLayer;
+
     private Animator anim;
     private PlayerAnim player;
+    private Skeleton skeleton;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
         player = FindObjectOfType<PlayerAnim>();
+        skeleton = GetComponentInParent<Skeleton>();
     }
 
     public void PlayAnim(int value)
@@ -35,6 +38,7 @@ public class AnimationControl : MonoBehaviour
     public void OnHit()
     {
         anim.SetTrigger("hit");
+
     }
 
     private void OnDrawGizmosSelected()
