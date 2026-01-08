@@ -11,6 +11,7 @@ public class Skeleton : MonoBehaviour
     public float totalHealth;
     public float currentHealth;
     public Image healthBar;
+    public bool isDead;
 
     [Header("Components")]
     [SerializeField] private NavMeshAgent agent;
@@ -30,28 +31,31 @@ public class Skeleton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        agent.SetDestination(player.transform.position);
+        if(!isDead)
+        {
+            agent.SetDestination(player.transform.position);
 
-        if(Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
-        {
-            //Chegou próximo do player, skeleton idle
-            animControl.PlayAnim(2);
-        }
-        else 
-        {
-            //skeleton walking
-            animControl.PlayAnim(1);
-        }
+            if(Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
+            {
+                //Chegou próximo do player, skeleton idle
+                animControl.PlayAnim(2);
+            }
+            else 
+            {
+                //skeleton walking
+                animControl.PlayAnim(1);
+            }
 
-        float posX = player.transform.position.x - transform.position.x;
+            float posX = player.transform.position.x - transform.position.x;
 
-        if(posX > 0)
-        {
-            transform.eulerAngles = new Vector2(0,0);
-        }
-        else
-        {
-            transform.eulerAngles = new Vector2(0,180);
+            if(posX > 0)
+            {
+                transform.eulerAngles = new Vector2(0,0);
+            }
+            else
+            {
+                transform.eulerAngles = new Vector2(0,180);
+            } 
         }
     }
 }

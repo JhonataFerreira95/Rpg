@@ -26,21 +26,32 @@ public class AnimationControl : MonoBehaviour
 
     public void Attack()
     {
-        Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, playerLayer);
-
-        if(hit != null)
+        if (!skeleton.isDead)
         {
-            //Detecta colisão com o player
-            player.OnHit();
+            Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, playerLayer);
+
+            if(hit != null)
+            {
+                //Detecta colisão com o player
+                player.OnHit();
+            }  
         }
     }
 
     public void OnHit()
     {
-        anim.SetTrigger("hit");
-        skeleton.currentHealth--;
+        if(skeleton.currentHealth <= 0)
+        {
+            skeleton.isDead = true;
+            anim.SetTrigger("death");
+        }
+        else
+        {
+            anim.SetTrigger("hit");
+            skeleton.currentHealth--;
 
-        skeleton.healthBar.fillAmount = skeleton.currentHealth / skeleton.totalHealth;
+            skeleton.healthBar.fillAmount = skeleton.currentHealth / skeleton.totalHealth;  
+        }
     }
 
     private void OnDrawGizmosSelected()
