@@ -32552,7 +32552,7 @@ PrefabInstance:
       objectReference: {fileID: 1941494021}
     - target: {fileID: 6720415469040698353, guid: 848a1e46997b9df48be8a8315c80e28a, type: 3}
       propertyPath: totalHealth
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6720415469040698354, guid: 848a1e46997b9df48be8a8315c80e28a, type: 3}
       propertyPath: m_Name
