@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     private bool _isDigging;
     private bool _isWatering;
     private Vector2 _direction;
+
     [HideInInspector] public int handlingObj;
 
     public Vector2 direction
@@ -94,7 +95,7 @@ public class Player : MonoBehaviour
 
             if(Input.GetKeyDown(KeyCode.Alpha4))
             {
-                handlingObj = 4;
+                handlingObj = 3;
             }
 
             OnInput();
@@ -120,7 +121,7 @@ public class Player : MonoBehaviour
 
     void OnAttack()
     {
-        if(handlingObj == 4)
+        if(handlingObj == 3)
         {
             if (Input.GetMouseButtonDown(0))
             {
