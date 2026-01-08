@@ -106,14 +106,20 @@ public class PlayerAnim : MonoBehaviour
 
     #region Attack
 
-    public void OnAttack()
+    public void OnAttacking()
     {
         Collider2D hit = Physics2D.OverlapCircle(attackPoint.position, radius, enemyLayer);
 
         if(hit != null)
         {
             // Atacou o inimigo
+            Debug.Log("acertou");
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(attackPoint.position, radius);
     }
 
     #endregion

@@ -175,7 +175,7 @@ public class Player : MonoBehaviour
 
     void OnCutting()
     {
-        if(handlingObj == 1)
+        if(handlingObj == 0)
         {
             if (Input.GetMouseButtonDown(0))
             {
