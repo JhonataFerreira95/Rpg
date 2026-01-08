@@ -33,5 +33,16 @@ public class Skeleton : MonoBehaviour
             //skeleton walking
             animControl.PlayAnim(1);
         }
+
+        float posX = player.transform.position.x - transform.position.x;
+
+        if(posX > 0)
+        {
+            transform.eulerAngles = new Vector2(0,0);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector2(0,180);
+        }
     }
 }
