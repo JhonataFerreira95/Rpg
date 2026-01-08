@@ -6,6 +6,7 @@ using UnityEngine.AI;
 public class Skeleton : MonoBehaviour
 {
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private AnimationControl animControl;
 
     private Player player;
 
@@ -25,11 +26,12 @@ public class Skeleton : MonoBehaviour
         if(Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
         {
             //Chegou próximo do player, skeleton idle
-
+            animControl.PlayAnim(2);
         }
         else 
         {
             //skeleton walking
+            animControl.PlayAnim(1);
         }
     }
 }
