@@ -38,7 +38,7 @@ public class AnimationControl : MonoBehaviour
     public void OnHit()
     {
         anim.SetTrigger("hit");
-
+        skeleton.heath--;
     }
 
     private void OnDrawGizmosSelected()

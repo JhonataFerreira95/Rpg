@@ -5,10 +5,13 @@ using UnityEngine.AI;
 
 public class Skeleton : MonoBehaviour
 {
+
+    [Header("Stats")]
+    public float heath;
+    
+    [Header("Components")]
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private AnimationControl animControl;
-
-    public float heath;
 
     private Player player;
 
