@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private bool _isRunning;
     private bool _isRolling;
     private bool _isCutting;
+    private bool _isAttacking;
     private bool _isDigging;
     private bool _isWatering;
     private Vector2 _direction;
@@ -44,6 +45,12 @@ public class Player : MonoBehaviour
     {
         get { return _isCutting;}
         set { _isCutting = value; }
+    }
+
+    public bool isAttacking
+    {
+        get { return _isAttacking;}
+        set { _isAttacking = value; }
     }
 
     public bool isDigging
