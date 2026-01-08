@@ -9,6 +9,7 @@ public class PlayerAnim : MonoBehaviour
     private Player player;
     private Animator anim;
     private Casting cast;
+    private bool isHitting;
 
     // Start is called before the first frame update
     void Start()
@@ -107,6 +108,10 @@ public class PlayerAnim : MonoBehaviour
 
     public void OnHit()
     {
-        anim.SetTrigger("hit");
+        if(!isHitting)
+        {
+            anim.SetTrigger("hit");
+            isHitting = true;
+        }
     }
 }

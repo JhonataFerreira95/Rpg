@@ -8,10 +8,12 @@ public class AnimationControl : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private LayerMask playerLayer;
     private Animator anim;
+    private PlayerAnim player;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        player = FindObjectOfType<PlayerAnim>();
     }
 
     public void PlayAnim(int value)
@@ -26,7 +28,7 @@ public class AnimationControl : MonoBehaviour
         if(hit != null)
         {
             //Detecta colisão com o player
-            Debug.Log("bateu");
+            player.OnHit();
         }
         else
         {
