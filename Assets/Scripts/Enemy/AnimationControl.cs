@@ -38,7 +38,9 @@ public class AnimationControl : MonoBehaviour
     public void OnHit()
     {
         anim.SetTrigger("hit");
-        skeleton.heath--;
+        skeleton.currentHealth--;
+
+        skeleton.healthBar.fillAmount = skeleton.currentHealth / skeleton.totalHealth;
     }
 
     private void OnDrawGizmosSelected()

@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class Skeleton : MonoBehaviour
 {
 
     [Header("Stats")]
-    public float heath;
-    
+    public float totalHealth;
+    public float currentHealth;
+    public Image healthBar;
+
     [Header("Components")]
     [SerializeField] private NavMeshAgent agent;
     [SerializeField] private AnimationControl animControl;
@@ -18,6 +21,7 @@ public class Skeleton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentHealth = totalHealth;
         player = FindObjectOfType<Player>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
