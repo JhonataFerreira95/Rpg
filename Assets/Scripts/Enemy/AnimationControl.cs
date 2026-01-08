@@ -30,10 +30,11 @@ public class AnimationControl : MonoBehaviour
             //Detecta colisão com o player
             player.OnHit();
         }
-        else
-        {
-            
-        }
+    }
+
+    public void OnHit()
+    {
+        anim.SetTrigger("hit");
     }
 
     private void OnDrawGizmosSelected()
