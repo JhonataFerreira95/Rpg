@@ -104,4 +104,9 @@ public class PlayerAnim : MonoBehaviour
     {
         anim.SetBool("hammering", false);
     }
+
+    public void OnHit()
+    {
+        anim.SetTrigger("hit");
+    }
 }
