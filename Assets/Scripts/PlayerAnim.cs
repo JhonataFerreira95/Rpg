@@ -10,6 +10,8 @@ public class PlayerAnim : MonoBehaviour
     private Animator anim;
     private Casting cast;
     private bool isHitting;
+    private float timeCount;
+    private float recoveryTime = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +24,19 @@ public class PlayerAnim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      OnMov(); 
-      OnRun();
+        OnMov(); 
+        OnRun();
+
+        if(isHitting)
+        {
+            timeCount += Time.deltaTime;
+
+            if(timeCount >= recoveryTime)
+            {
+                isHitting = false;
+            }  
+        }
+      
     }
 
     #region Movement
