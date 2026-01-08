@@ -97,7 +97,8 @@ public class Player : MonoBehaviour
             OnRolling();
             OnCutting();
             OnDig();
-            OnWatering(); 
+            OnWatering();
+            OnAttack();
         }
 
     }
@@ -111,6 +112,21 @@ public class Player : MonoBehaviour
     }
 
     #region Movement
+
+    void OnAttack()
+    {
+        if(handlingObj == 4)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                isAttacking = true;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                isAttacking = false;
+            }
+        }
+    }
 
     void OnWatering()
     {
@@ -152,7 +168,7 @@ public class Player : MonoBehaviour
 
     void OnCutting()
     {
-        if(handlingObj == 0)
+        if(handlingObj == 1)
         {
             if (Input.GetMouseButtonDown(0))
             {

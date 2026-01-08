@@ -87,6 +87,11 @@ public class PlayerAnim : MonoBehaviour
             {
                anim.SetInteger("transition", 5);
             }
+
+            if (player.isAttacking)
+            {
+               anim.SetInteger("transition", 6);
+            }
         }
 
         void OnRun()
