@@ -34,7 +34,7 @@ public class AnimationControl : MonoBehaviour
         }
     }
 
-    private void OawGizmosSelected()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(attackPoint.position, radius);
     }
