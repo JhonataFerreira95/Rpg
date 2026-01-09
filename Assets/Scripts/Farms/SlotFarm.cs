@@ -22,6 +22,7 @@ public class SlotFarm : MonoBehaviour
     private int initialDigAmount;
     private float currentWater;
     private bool dugHole;
+    private bool plantedCarrot;
     
     PlayerItens playerItens;
 
@@ -41,18 +42,20 @@ public class SlotFarm : MonoBehaviour
                 currentWater += 0.01f;
             }
             
-            if(currentWater >= waterAmount)
+            if(currentWater >= waterAmount && !plantedCarrot)
             {
                 audioSource.PlayOneShot(holeSFX);
                 spriteRenderer.sprite = carrot;
 
-                if (Input.GetKeyDown(KeyCode.E))
-                {   
-                    audioSource.PlayOneShot(carrotSFX);
-                    spriteRenderer.sprite = hole;
-                    playerItens.carrots++;
-                    currentWater = 0f;
-                }
+                plantedCarrot = true;
+            }
+
+            if (Input.GetKeyDown(KeyCode.E) && plantedCarrot)
+            {   
+                audioSource.PlayOneShot(carrotSFX);
+                spriteRenderer.sprite = hole;
+                playerItens.carrots++;
+                currentWater = 0f;
             }
         }
     }
