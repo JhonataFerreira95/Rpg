@@ -43,10 +43,12 @@ public class SlotFarm : MonoBehaviour
             
             if(currentWater >= waterAmount)
             {
+                audioSource.PlayOneShot(holeSFX);
                 spriteRenderer.sprite = carrot;
 
                 if (Input.GetKeyDown(KeyCode.E))
-                {
+                {   
+                    audioSource.PlayOneShot(carrotSFX);
                     spriteRenderer.sprite = hole;
                     playerItens.carrots++;
                     currentWater = 0f;
