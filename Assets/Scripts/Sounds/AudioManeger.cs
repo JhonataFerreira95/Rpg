@@ -5,8 +5,9 @@ using UnityEngine;
 public class AudioManeger : MonoBehaviour
 {
     public static AudioManeger instance;
+    public GameObject audioController;
 
-    void Awake()
+    private void Awake()
     {
         if(instance == null)
         {
@@ -15,7 +16,7 @@ public class AudioManeger : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(audioController);
         }
     }
 }
