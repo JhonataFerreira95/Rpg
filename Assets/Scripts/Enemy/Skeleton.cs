@@ -35,7 +35,8 @@ public class Skeleton : MonoBehaviour
     void Update()
     {
         if(!isDead && detectPlayer)
-        {
+        {   
+            agent.isStopped = false;
             agent.SetDestination(player.transform.position);
 
             if(Vector2.Distance(transform.position, player.transform.position) <= agent.stoppingDistance)
@@ -81,6 +82,7 @@ public class Skeleton : MonoBehaviour
             // n viu o player
             detectPlayer = false;
             animControl.PlayAnim(0);
+            agent.isStopped = true;
         }
     }
 
