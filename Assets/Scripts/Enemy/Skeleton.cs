@@ -69,7 +69,7 @@ public class Skeleton : MonoBehaviour
 
     public void DetectPlayer()
     {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, player.gameObject.layer);
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, layer);
 
         if(hit != null)
         {
