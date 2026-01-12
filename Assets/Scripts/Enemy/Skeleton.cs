@@ -8,6 +8,7 @@ public class Skeleton : MonoBehaviour
 {
 
     [Header("Stats")]
+    public float radius;
     public float totalHealth;
     public float currentHealth;
     public Image healthBar;
@@ -57,5 +58,10 @@ public class Skeleton : MonoBehaviour
                 transform.eulerAngles = new Vector2(0,180);
             } 
         }
+    }
+
+    public void DetectPlayer()
+    {
+        Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, player.gameObject.layer);
     }
 }
