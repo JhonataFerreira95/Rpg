@@ -19,6 +19,7 @@ public class Skeleton : MonoBehaviour
     [SerializeField] private AnimationControl animControl;
 
     private Player player;
+    private bool detectPlayer;
 
     // Start is called before the first frame update
     void Start()
@@ -63,5 +64,14 @@ public class Skeleton : MonoBehaviour
     public void DetectPlayer()
     {
         Collider2D hit = Physics2D.OverlapCircle(transform.position, radius, player.gameObject.layer);
+
+        if(hit != null)
+        {
+            // viu o player
+        }
+        else
+        {
+            // n viu o player
+        }
     }
 }
