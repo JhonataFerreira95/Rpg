@@ -9,6 +9,7 @@ public class Skeleton : MonoBehaviour
 
     [Header("Stats")]
     public float radius;
+    public LayerMask layer;
     public float totalHealth;
     public float currentHealth;
     public Image healthBar;
@@ -59,6 +60,11 @@ public class Skeleton : MonoBehaviour
                 transform.eulerAngles = new Vector2(0,180);
             } 
         }
+    }
+
+    private void FixedUpdate()
+    {
+        DetectPlayer();
     }
 
     public void DetectPlayer()
