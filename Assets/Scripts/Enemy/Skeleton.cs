@@ -68,10 +68,12 @@ public class Skeleton : MonoBehaviour
         if(hit != null)
         {
             // viu o player
+            detectPlayer = true;
         }
         else
         {
             // n viu o player
+            detectPlayer = false;
         }
     }
 }
