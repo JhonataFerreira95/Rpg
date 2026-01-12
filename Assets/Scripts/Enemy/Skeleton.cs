@@ -80,6 +80,7 @@ public class Skeleton : MonoBehaviour
         {
             // n viu o player
             detectPlayer = false;
+            animControl.PlayAnim(0);
         }
     }
 
