@@ -33,7 +33,7 @@ public class Skeleton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isDead)
+        if(!isDead && detectPlayer)
         {
             agent.SetDestination(player.transform.position);
 
@@ -75,5 +75,10 @@ public class Skeleton : MonoBehaviour
             // n viu o player
             detectPlayer = false;
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }
