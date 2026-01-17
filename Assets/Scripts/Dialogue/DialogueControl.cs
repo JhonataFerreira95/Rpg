@@ -22,11 +22,9 @@ public class DialogueControl : MonoBehaviour
     public Text speechText; // texto da fala
     public Text actorNameText; // nome npc
 
+    // Variáveis de controle
     [Header("Settings")]
     public float typingSpeed; // velocidade da fala
-
-    // Variáveis de controle
-
     public bool isShowing; // se a janela está visível
     private int index; // index das sentenças 
     private string[] sentences;
