@@ -31036,8 +31036,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -211.809, y: 43.8}
-  m_SizeDelta: {x: 256.527, y: 47.791}
+  m_AnchoredPosition: {x: -205.24182, y: 43.581066}
+  m_SizeDelta: {x: 292.77, y: 70.7449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1330321265
 MonoBehaviour:
@@ -31061,7 +31061,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 44
+    m_FontSize: 45
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -34162,7 +34162,7 @@ MonoBehaviour:
   dialogueObj: {fileID: 1233131598}
   ProfileSprite: {fileID: 1605436606}
   speechText: {fileID: 2040544591}
-  actorNameText: {fileID: 0}
+  actorNameText: {fileID: 1330321265}
   typingSpeed: 0.08
   isShowing: 0
 --- !u!4 &1984841113
@@ -34532,7 +34532,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 60
+    m_FontSize: 37
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 6

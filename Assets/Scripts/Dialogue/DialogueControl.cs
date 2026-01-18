@@ -66,6 +66,8 @@ public class DialogueControl : MonoBehaviour
             if(index < sentences.Length - 1)
             {
                 index++;
+                ProfileSprite.sprite = actorSprite[index];
+                actorNameText.text = currentActorName[index];
                 speechText.text = "";
                 StartCoroutine(TypeSentence());
             }

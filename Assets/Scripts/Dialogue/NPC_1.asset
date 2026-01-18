@@ -16,21 +16,33 @@ MonoBehaviour:
   speakerSprite: {fileID: 0}
   sentence: 
   dialogues:
-  - actorName: "Sauda\xE7\xE3o"
-    profile: {fileID: -1932989242, guid: 36fe4b0621acd5945a8887b6c9f2a448, type: 3}
+  - actorName: Fern
+    profile: {fileID: 21300000, guid: d92b546496efe1a4a9b218c47b6b191a, type: 3}
     sentence:
-      portuguese: Oi meu chapa! O que busca nessas terras?
-      english: Hey buddy! What are you looking for in these parts?
-      spanish: "\xA1Hola, amigo! \xBFQu\xE9 buscas por estos lares?"
-  - actorName: Sobre o Lula
-    profile: {fileID: -1932989242, guid: 36fe4b0621acd5945a8887b6c9f2a448, type: 3}
+      portuguese: "Ol\xE1, gostaria de dicas?"
+      english: Hello, would you like some tips?
+      spanish: "Hola, \xBFquieres algunos consejos?"
+  - actorName: "Her\xF3i"
+    profile: {fileID: 21300000, guid: f49016ebe1c076142b8ea2fce7591831, type: 3}
     sentence:
-      portuguese: Faz o L amigo
-      english: Make the L Friend
-      spanish: Haz el L amigo
-  - actorName: Dinheiro
-    profile: {fileID: -1932989242, guid: 36fe4b0621acd5945a8887b6c9f2a448, type: 3}
+      portuguese: "Sim, o que voc\xEA pode me dizer?"
+      english: Yes, what can you tell me?
+      spanish: "S\xED, \xBFqu\xE9 me puedes decir?"
+  - actorName: Fern
+    profile: {fileID: 21300000, guid: d92b546496efe1a4a9b218c47b6b191a, type: 3}
     sentence:
-      portuguese: "MIM D\xCA DINHEIROS"
-      english: GIVE ME MONEY
-      spanish: DAME DINERO
+      portuguese: "Se voc\xEA chegar pr\xF3ximo dos baldes no lago na parte inferior
+        e aperta em \"E\", \xE9 poss\xEDvel coletar \xE1gua."
+      english: "If you approach the buckets at the bottom of the lake and press \u201CE,\u201D
+        you can collect water."
+      spanish: "Si te acercas a los cubos del lago en la parte inferior y pulsas
+        \"E\", podr\xE1s recoger agua."
+  - actorName: Fern
+    profile: {fileID: 21300000, guid: d92b546496efe1a4a9b218c47b6b191a, type: 3}
+    sentence:
+      portuguese: "Se voc\xEA deseja pescar, v\xE1 \xE0 parte superior do lago e
+        aperte \"E\" para iniciar a pesca."
+      english: "If you want to fish, go to the top of the lake and press \u201CE\u201D
+        to start fishing."
+      spanish: Si quieres pescar, ve a la parte superior del lago y pulsa "E" para
+        empezar a pescar.
