@@ -74,6 +74,7 @@ public class DialogueControl : MonoBehaviour
             else // Quando terminam os textos
             {
                 speechText.text = "";
+                actorNameText.text = "";
                 index = 0;
                 dialogueObj.SetActive(false);
                 sentences = null;
