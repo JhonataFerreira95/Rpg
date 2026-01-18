@@ -15,7 +15,7 @@ public class NPC_Dialogue : MonoBehaviour
 
     private List<string> sentences = new List<string>();
     private List<string> actorName = new List<string>();
-    private List<string> actorSprite = new List<string>();
+    private List<Sprite> actorSprite = new List<Sprite>();
 
     private void Start()
     {
@@ -47,9 +47,9 @@ public class NPC_Dialogue : MonoBehaviour
                     sentences.Add(dialogue.dialogues[i].sentence.spanish);
                     break;
             }
+            actorName.Add(dialogue.dialogues[i].actorName);
+            actorSprite.Add(dialogue.dialogues[i].profile);
         }
-
-        
     }
 
     // FixedUpdade é usado pela física
