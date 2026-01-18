@@ -79,7 +79,7 @@ public class DialogueControl : MonoBehaviour
     }
 
     // chamar a falar do npc
-    public void Speech(string[] txt)
+    public void Speech(string[] txt, string[]actorNamer, Sprite[]actorProfile)
     {
         if (!isShowing)
         {
