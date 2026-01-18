@@ -14,6 +14,8 @@ public class NPC_Dialogue : MonoBehaviour
     bool playerHit;
 
     private List<string> sentences = new List<string>();
+    private List<string> actorName = new List<string>();
+    private List<string> actorSprite = new List<string>();
 
     private void Start()
     {
@@ -46,6 +48,8 @@ public class NPC_Dialogue : MonoBehaviour
                     break;
             }
         }
+
+        
     }
 
     // FixedUpdade é usado pela física
