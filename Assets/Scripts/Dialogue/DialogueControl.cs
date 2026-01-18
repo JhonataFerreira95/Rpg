@@ -28,6 +28,8 @@ public class DialogueControl : MonoBehaviour
     public bool isShowing; // se a janela está visível
     private int index; // index das sentenças 
     private string[] sentences;
+    private string[] actorName;
+    private Sprite[] actorProfile;
 
     public static DialogueControl instance;
 
