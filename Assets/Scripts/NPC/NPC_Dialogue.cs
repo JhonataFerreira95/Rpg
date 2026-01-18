@@ -15,7 +15,7 @@ public class NPC_Dialogue : MonoBehaviour
 
     private List<string> sentences = new List<string>();
     private List<string> actorName = new List<string>();
-    private List<Sprite> actorProfile = new List<Sprite>();
+    private List<Sprite> actorSprite = new List<Sprite>();
 
     private void Start()
     {
@@ -48,7 +48,7 @@ public class NPC_Dialogue : MonoBehaviour
                     break;
             }
             actorName.Add(dialogue.dialogues[i].actorName);
-            actorProfile.Add(dialogue.dialogues[i].profile);
+            actorSprite.Add(dialogue.dialogues[i].profile);
         }
     }
 
