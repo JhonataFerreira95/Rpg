@@ -155,6 +155,10 @@ public class Player : MonoBehaviour
                 playerItens.currentWater -= 0.01f;
             }
         }
+        else
+        {
+           isWatering = false; 
+        }
     }
 
     void OnDig()
