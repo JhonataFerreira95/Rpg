@@ -31,6 +31,8 @@ public class DialogueControl : MonoBehaviour
     private string[] currentActorName;
     private Sprite[] actorSprite;
 
+    private Player player;
+
     public static DialogueControl instance;
 
     // awake é chamdo antes de todos os start() na hierarquia de scripts
@@ -41,12 +43,7 @@ public class DialogueControl : MonoBehaviour
 
     void Start()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        player = FindObjectOfType<Player>();
     }
 
     IEnumerator TypeSentence()
