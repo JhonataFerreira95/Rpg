@@ -201,6 +201,10 @@ public class Player : MonoBehaviour
                 speed = initialSpeed;
             }
         }
+        else
+        {
+            isCutting = false;
+        }
     }
 
     void OnInput()
