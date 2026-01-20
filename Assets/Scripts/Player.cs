@@ -180,6 +180,10 @@ public class Player : MonoBehaviour
                 speed = initialSpeed;
             }
         }
+        else
+        {
+            isDigging = false;
+        }
     }
 
     void OnCutting()
