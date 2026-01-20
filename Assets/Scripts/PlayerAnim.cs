@@ -51,7 +51,10 @@ public class PlayerAnim : MonoBehaviour
             {
                 if (player.isRolling)
                 {
-                    anim.SetTrigger("isRoll");
+                    if (!anim.GetCurrentAnimatorStateInfo(0).IsName("roll"))
+                    {
+                       anim.SetTrigger("isRoll"); 
+                    }
                 }
                 else
                 {
