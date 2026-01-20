@@ -134,6 +134,10 @@ public class Player : MonoBehaviour
                 speed = initialSpeed;
             }
         }
+        else
+        {
+            isAttacking = false;
+        }
     }
 
     void OnWatering()
