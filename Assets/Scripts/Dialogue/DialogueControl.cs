@@ -76,6 +76,7 @@ public class DialogueControl : MonoBehaviour
                 dialogueObj.SetActive(false);
                 sentences = null;
                 isShowing = false;
+                player.isPaused = false;
             }
         }
     }
@@ -93,6 +94,7 @@ public class DialogueControl : MonoBehaviour
             actorNameText.text = currentActorName[index];
             StartCoroutine(TypeSentence());
             isShowing = true;
+            player.isPaused = true;
         }              
     }
 }
