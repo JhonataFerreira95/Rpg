@@ -19,6 +19,7 @@ public class SlotFarm : MonoBehaviour
     [SerializeField] private float waterAmount; // Total de água para nascer uma cenoura
     [SerializeField] private bool detecting;
 
+    private bool isPlayer; // Fica verdadeiro se o player está encostando na cenoura
     private int initialDigAmount;
     private float currentWater;
     private bool dugHole;
@@ -84,9 +85,14 @@ public class SlotFarm : MonoBehaviour
             OnHit();
         }
 
-        if (collision.CompareTag("Water"))
+        if(collision.CompareTag("Water"))
         {
             detecting = true;
+        }
+
+        if(collision.CompareTag("Player"))
+        {
+            isPlayer = true;
         }
     }
 
@@ -95,6 +101,11 @@ public class SlotFarm : MonoBehaviour
         if (collision.CompareTag("Water"))
         {
             detecting = false;
+        }
+
+        if(collision.CompareTag("Player"))
+        {
+            isPlayer = false;
         }
     }
 }
