@@ -51,7 +51,7 @@ public class SlotFarm : MonoBehaviour
                 plantedCarrot = true;
             }
 
-            if (Input.GetKeyDown(KeyCode.E) && plantedCarrot)
+            if (Input.GetKeyDown(KeyCode.E) && plantedCarrot && isPlayer)
             {   
                 audioSource.PlayOneShot(carrotSFX);
                 spriteRenderer.sprite = hole;
