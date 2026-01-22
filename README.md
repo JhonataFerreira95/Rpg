@@ -33,7 +33,8 @@ IFRN RPG/
 │   └── Sprites/
 │   └── UI\Dialogue
 ├── Logs/
-├── Packages/
+├── Packages/Reports
+├── Reports/
 ├── UserSettings/
 │   ├── layouts/
 │   └── Search.settings
