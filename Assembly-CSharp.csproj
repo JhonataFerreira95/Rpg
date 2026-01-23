@@ -119,8 +119,19 @@
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\moderninteriors-win\2_Characters\Character_Generator\CHARACTER_GENERATOR.txt" />
+    <None Include="Assets\Modern_Exteriors_RPG_Maker_MV_v42.3\Modern_Exteriors_16x16\Animated_16x16\GIF FORMAT ISSUE.txt" />
+    <None Include="Assets\Modern_Exteriors_RPG_Maker_MV_v42.3\Modern_Exteriors_48x48\Animated_48x48\GIF FORMAT ISSUE.txt" />
     <None Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\FadeOutNearbyObjects\FadeOut.shader" />
+    <None Include="Assets\moderninteriors-win\THIRD-PARTY TOOLS.txt" />
+    <None Include="Assets\Modern_Office_Revamped_v1.2\LICENSE.txt" />
+    <None Include="Assets\moderninteriors-win\LICENSE.txt" />
+    <None Include="Assets\Modern_Exteriors_RPG_Maker_MV_v42.3\READ_ME.txt" />
     <None Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\Anywhere Door\ScreenCutoutShader.shader" />
+    <None Include="Assets\Modern_Office_Revamped_v1.2\5_Modern_Office_RPG_MAKER_MV\IMPORT MANUAL.txt" />
+    <None Include="Assets\moderninteriors-win\READ_ME.txt" />
+    <None Include="Assets\Modern_Office_Revamped_v1.2\7_Modern_Office_Previous_Version\Modern_Office_old\READ ME.txt" />
+    <None Include="Assets\Modern_Exteriors_RPG_Maker_MV_v42.3\Modern_Exteriors_32x32\Animated_32x32\GIF FORMAT ISSUE.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
