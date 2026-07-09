@@ -14,8 +14,8 @@
 6. [laços de repetição e vetores com for/foreach/array](#laços-de-repetição-e-vetores-com-forforeacharray)
 7. [Vetores com lists](#vetores-com-lists)
 
-
 ---
+
 ## Estrutura do projeto
 
 ```bash
