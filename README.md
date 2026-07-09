@@ -15,7 +15,6 @@
 
 
 ---
-
 ## Estrutura do projeto
 
 ```bash
