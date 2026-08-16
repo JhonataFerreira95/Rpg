@@ -408,10 +408,10 @@ TextureImporter:
       name: Tileset_1_MV copy_12
       rect:
         serializedVersion: 2
-        x: 416
-        y: 481
-        width: 33
-        height: 8
+        x: 411
+        y: 480
+        width: 42
+        height: 12
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -639,10 +639,10 @@ TextureImporter:
       name: Tileset_1_MV copy_23
       rect:
         serializedVersion: 2
-        x: 393
-        y: 310
-        width: 80
-        height: 52
+        x: 391
+        y: 356
+        width: 81
+        height: 88
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,12 +660,12 @@ TextureImporter:
       name: Tileset_1_MV copy_24
       rect:
         serializedVersion: 2
-        x: 396
-        y: 364
-        width: 75
-        height: 80
+        x: 392
+        y: 308
+        width: 79
+        height: 47
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
