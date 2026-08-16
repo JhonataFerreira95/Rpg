@@ -639,10 +639,10 @@ TextureImporter:
       name: Tileset_1_MV copy_23
       rect:
         serializedVersion: 2
-        x: 391
-        y: 356
-        width: 81
-        height: 88
+        x: 389
+        y: 355
+        width: 85
+        height: 93
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -660,9 +660,9 @@ TextureImporter:
       name: Tileset_1_MV copy_24
       rect:
         serializedVersion: 2
-        x: 392
+        x: 389
         y: 308
-        width: 79
+        width: 85
         height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
