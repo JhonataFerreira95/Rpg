@@ -33,6 +33,7 @@ IFRN RPG/
 ├── Logs/
 ├── Packages/Reports
 ├── Reports/
+├── Planta/
 ├── UserSettings/
 │   ├── layouts/
 │   └── Search.settings
