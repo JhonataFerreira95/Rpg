@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerIFRN : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float speed;
+
+    private Rigidbody2D rig;
+    private Vector2 direction;
+
+
+    private void Update()
     {
-        
+        direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
