@@ -15,4 +15,9 @@ public class PlayerIFRN : MonoBehaviour
         direction = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
     }
 
+    private void FixedUpdate()
+    {
+        rig.MovePosition(rig.position + direction * speed);
+    }
+
 }
