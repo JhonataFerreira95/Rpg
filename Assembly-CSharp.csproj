@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\Hud\HUDController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
+    <Compile Include="Assets\ScriptsIFRN\PlayerIFRN.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\moderninteriors-win\2_Characters\Character_Generator\CHARACTER_GENERATOR.txt" />
