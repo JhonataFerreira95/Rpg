@@ -22,7 +22,7 @@ public class PlayerIFRN : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rig.MovePosition(rig.position + direction * speed);
+        rig.MovePosition(rig.position + direction * speed * Time.fixedDeltaTime);
     }
 
 }
