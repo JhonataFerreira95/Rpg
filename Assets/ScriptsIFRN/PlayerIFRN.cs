@@ -9,6 +9,11 @@ public class PlayerIFRN : MonoBehaviour
     private Rigidbody2D rig;
     private Vector2 direction;
 
+    void Start()
+    {
+        rig = GetComponent<Rigidbody2D>();
+    }
+
 
     private void Update()
     {
