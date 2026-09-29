@@ -86,6 +86,7 @@
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\ExampleHelpWindow.cs" />
     <Compile Include="Assets\Scripts\PlayerAnim.cs" />
     <Compile Include="Assets\Scripts\Sounds\ActorsSFX.cs" />
+    <Compile Include="Assets\ScriptsIFRN\PlayerAnimIFRN.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\BossCamera\CustomLockCameraY.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueSettings.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\InputSystemHelper.cs" />
@@ -118,7 +119,6 @@
     <Compile Include="Assets\Scripts\Hud\HUDController.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Shared\Scripts\ActivateCameraWithDistance.cs" />
     <Compile Include="Assets\Samples\Cinemachine\2.10.3\Cinemachine Example Scenes\Scenes\Anywhere Door\TagChanger.cs" />
-    <Compile Include="Assets\ScriptsIFRN\PlayerAnimIFRN.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\moderninteriors-win\2_Characters\Character_Generator\CHARACTER_GENERATOR.txt" />
