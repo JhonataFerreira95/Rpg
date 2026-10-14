@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  13 OCT 2026 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  14 OCT 2026 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -80,47 +80,37 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-
-c:/Users/Bass/Downloads/programacao/Rpg_IFRN/Reports/00_introduction.tex:6: LaTeX Error: No \title given.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 \maketitle
-              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 6.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 6.
-
-LaTeX Warning: No \author given.
+c:/Users/Bass/Downloads/programacao/Rpg_IFRN/Reports/00_introduction.tex:13: Undefined control sequence.
+<recently read> \lager 
+                       
+l.13     \textbf{\lager JHONATA SANTANA FERREIRA}
+                                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [1
 
-{C:/Users/Bass/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (00_introduction.aux)
+{C:/Users/Bass/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1] (00_introduction.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1300 strings out of 467870
- 21691 string characters out of 5418839
- 435733 words of memory out of 5000000
- 30216 multiletter control sequences out of 15000+600000
- 631361 words of font info for 52 fonts, out of 8000000 for 9000
+ 1283 strings out of 467870
+ 21510 string characters out of 5418839
+ 434733 words of memory out of 5000000
+ 30206 multiletter control sequences out of 15000+600000
+ 628932 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,65p,245b,204s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on 00_introduction.pdf (1 page, 33149 bytes).
+ 57i,5n,65p,245b,134s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on 00_introduction.pdf (2 pages, 43284 bytes).
 PDF statistics:
- 21 PDF objects out of 1000 (max. 8388607)
+ 29 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
