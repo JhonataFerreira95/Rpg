@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  14 OCT 2026 10:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  14 OCT 2026 22:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -79,31 +79,24 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
-)) [1
+))
+c:/Users/Bass/Downloads/programacao/Rpg_IFRN/Reports/00_introduction.tex:24: I can't write on file `00_introduction.pdf'.
+(Press Enter to retry, or Control-C to exit; default file extension is `.pdf')
+Please type another file name for output
+c:/Users/Bass/Downloads/programacao/Rpg_IFRN/Reports/00_introduction.tex:24: Emergency stop.
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.24 \end{titlepage}
+                    
+*** (job aborted, file error in nonstop mode)
 
-{C:/Users/Bass/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 37.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 37.
- [1] [1] (00_introduction.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-24>
- ***********
- ) 
+ 
 Here is how much of TeX's memory you used:
- 1297 strings out of 467870
- 21741 string characters out of 5418839
- 436733 words of memory out of 5000000
- 30218 multiletter control sequences out of 15000+600000
- 629844 words of font info for 47 fonts, out of 8000000 for 9000
+ 1275 strings out of 467870
+ 21307 string characters out of 5418839
+ 435733 words of memory out of 5000000
+ 30202 multiletter control sequences out of 15000+600000
+ 628634 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,5n,65p,314b,250s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb>
-Output written on 00_introduction.pdf (3 pages, 50728 bytes).
-PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 57i,5n,65p,245b,159s stack positions out of 10000i,1000n,20000p,200000b,200000s
+c:/Users/Bass/Downloads/programacao/Rpg_IFRN/Reports/00_introduction.tex:24:  ==> Fatal error occurred, no output PDF file produced!
