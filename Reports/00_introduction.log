@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  16 OCT 2026 02:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  16 OCT 2026 02:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,27 +292,34 @@ l.70 \end{titlepage}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \end{document}
+l.98 \end{document}
                     [1] (00_introduction.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `00_introduction.out' has not changed.
-(rerunfilecheck)             Checksum: 2432500F404785C9F1133F5D37C1DF6D;99.
+
+
+Package rerunfilecheck Warning: File `00_introduction.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `00_introduction.out':
+(rerunfilecheck)             Before: B8DDC38328E2950000EEC6FD4D32E75A;368
+(rerunfilecheck)             After:  D86F4364AD3324D7F472B712E70FE4E4;417.
  ) 
 Here is how much of TeX's memory you used:
- 9807 strings out of 467870
- 156237 string characters out of 5418839
- 581966 words of memory out of 5000000
- 38593 multiletter control sequences out of 15000+600000
+ 9815 strings out of 467870
+ 156354 string characters out of 5418839
+ 581970 words of memory out of 5000000
+ 38598 multiletter control sequences out of 15000+600000
  639594 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,353b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 00_introduction.pdf (3 pages, 44188 bytes).
+Output written on 00_introduction.pdf (3 pages, 47596 bytes).
 PDF statistics:
- 38 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 47 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
