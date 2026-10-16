@@ -1,60 +1,89 @@
-\documentclass{article}
-\usepackage{graphicx}
+\documentclass[12pt, a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
 \usepackage{times}
+\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+% ABNT: títulos de seções em maiúsculas, negrito, 12pt
+\titleformat{\section}{\normalfont\bfseries\uppercase}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
 
 \begin{document}
 
+% -------------------------------------------------------
+% CAPA (ABNT NBR 14724)
+% -------------------------------------------------------
 \begin{titlepage}
     \begin{center}
-    {\large INSTITUTO  FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE}
+        {\normalsize\bfseries INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DO RIO GRANDE DO NORTE}
 
-    \vfill
+        \vfill
 
-    \textbf{\large JHONATA SANTANA FERREIRA}
+        {\normalsize\bfseries JHONATA SANTANA FERREIRA}
 
-    \vfill
+        \vfill
 
-    {\bfseries\large DESAFIOS E OPORTUNIDADES NO DESENVOLVIMENTO DE UM JOGO PARA\\
-    O CAMPUS: DESBRAVANDO O CAMPUS}
-    
-    \vfill
+        {\normalsize\bfseries DESAFIOS E OPORTUNIDADES NO DESENVOLVIMENTO DE UM JOGO PARA O CAMPUS: DESBRAVANDO O CAMPUS}
 
-    {\large PARNAMIRIM-RN}\\
-    {\large 2026}
+        \vfill
+
+        {\normalsize PARNAMIRIM-RN}\\[0.3cm]
+        {\normalsize 2026}
     \end{center}
 \end{titlepage}
 
+% -------------------------------------------------------
+% FOLHA DE ROSTO (ABNT NBR 14724)
+% -------------------------------------------------------
 \begin{titlepage}
     \begin{center}
-        \textbf{\large DESAFIOS E OPORTUNIDADES NO DESENVOLVIMENTO DE UM JOGO PARA O CAMPUS: DESBRAVANDO O CAMPUS}
+        {\normalsize\bfseries JHONATA SANTANA FERREIRA}
+
+        \vfill
+
+        {\normalsize\bfseries DESAFIOS E OPORTUNIDADES NO DESENVOLVIMENTO DE UM JOGO PARA O CAMPUS: DESBRAVANDO O CAMPUS}
     \end{center}
+
     \vfill
-    \vspace*{4cm}
+
     \begin{flushright}
-        \begin{minipage}{0.65\textwidth}
-            \small
-            Relatório apresentado ao Curso Tecnólogo em Sistemas para Internet, na disciplina de Programação para Internet das Coisas, no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte.
+        \begin{minipage}{0.5\textwidth}
+            \normalsize
+            Relatório apresentado ao Curso Tecnólogo em Sistemas para Internet, na disciplina de Programação para Internet das Coisas, no Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte, como requisito parcial de avaliação.
+            
+            \vspace{0.8cm}
+            Orientador: A DEFINIR
         \end{minipage}
     \end{flushright}
-    \vspace{1cm}
-    \begin{flushright}
-        \begin{minipage}{0.55\textwidth}
-            \small
-            Orientador: A DEFINIR!
-        \end{minipage}
-    \end{flushright}
-    \vspace{1.5cm}
+
+    \vfill
+
     \begin{center}
-        {\large PARNAMIRIM-RN}\\
-        {\large 2026}
+        {\normalsize PARNAMIRIM-RN}\\[0.3cm]
+        {\normalsize 2026}
     \end{center}
 \end{titlepage}
 
-\newpage
+% -------------------------------------------------------
+% CONFIGURAÇÕES PÓS-CAPA
+% -------------------------------------------------------
+\setcounter{page}{1}         % numeração começa após as capas
+\onehalfspacing              % espaçamento 1,5 (ABNT)
+\setlength{\parindent}{1.25cm} % recuo de parágrafo (ABNT)
 
+% -------------------------------------------------------
+% SEÇÕES
+% -------------------------------------------------------
+\section{INTRODUÇÃO}
 
-\section{Introduction}
-
-O seguinte relatórios descrever a inspiração e motivação para a criação do jogo lúdico\textit{(Desbravando o Campus)} utilizando o moto gráfico \textit{unity} e programação orientada a objeto\textit{(POO)}
+O seguinte relatório descreve a inspiração e motivação para a criação do jogo
+lúdico \textit{Desbravando o Campus}, desenvolvido utilizando o motor gráfico
+\textit{Unity} e os conceitos de Programação Orientada a Objetos (POO). 
+Após a criação do 
 
 \end{document}
