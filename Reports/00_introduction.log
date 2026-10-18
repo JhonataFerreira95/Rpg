@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 13:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 14:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -292,7 +292,7 @@ l.70 \end{titlepage}
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 \end{document}
+l.107 \end{document}
                      [1] (00_introduction.aux)
  ***********
 LaTeX2e <2025-11-01>
@@ -304,13 +304,13 @@ Package rerunfilecheck Info: File `00_introduction.out' has not changed.
 Here is how much of TeX's memory you used:
  9814 strings out of 467870
  156350 string characters out of 5418839
- 581975 words of memory out of 5000000
+ 582975 words of memory out of 5000000
  38598 multiletter control sequences out of 15000+600000
  639594 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,353b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 00_introduction.pdf (3 pages, 49909 bytes).
+Output written on 00_introduction.pdf (3 pages, 51043 bytes).
 PDF statistics:
  46 PDF objects out of 1000 (max. 8388607)
  5 named destinations out of 1000 (max. 500000)
