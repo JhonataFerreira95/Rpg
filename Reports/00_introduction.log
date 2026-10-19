@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 21:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -53,17 +53,12 @@ Package babel Info: Configuration files are deprecated, as
 *
 (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
-) (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-brazil.tex)
-
-Package babel Warning: Name 'brazil' is deprecated.
-(babel)                Use 'brazilian' instead.
-(babel)                Reported on input line 4320.
-
-Package babel Info: Importing font and identification data for brazil
+) (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/pt\babel-brazilian.tex)
+Package babel Info: Importing font and identification data for brazilian
 (babel)             from babel-pt-BR.ini. Reported on input line 4320.
-(C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazilian.ldf
+ (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/babel-portuges\brazilian.ldf
 Language: portuges 2026/01/24 v1.2u Portuguese support from the babel system
-Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
 (babel)             (\language56). Reported on input line 100.
 Package babel Info: Making " an active character on input line 132.
 )) (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
@@ -211,7 +206,7 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 ) (00_introduction.aux
-Package babel Info: 'brazil' activates 'portuges' shorthands.
+Package babel Info: 'brazilian' activates 'portuges' shorthands.
 (babel)             Reported on input line 8.
 )
 \openout1 = `00_introduction.aux'.
@@ -278,27 +273,27 @@ Package hyperref Info: Link coloring OFF on input line 16.
 
 {C:/Users/Bass/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 61.
+(Font)              <12> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 61.
+(Font)              <8> on input line 62.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 61.
+(Font)              <6> on input line 62.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.70 \end{titlepage}
+l.71 \end{titlepage}
                      [1]
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.125 \newpage
+l.126 \newpage
                [1] [2]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 176.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 177.
  (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (6.12643pt too wide) in paragraph at lines 176--178
+Overfull \hbox (6.12643pt too wide) in paragraph at lines 177--179
 []\T1/ptm/m/n/12 Modelar a ar-qui-te-tura do sis-tema uti-li-zando a Lin-gua-gem de Mo-de-la-gem Uni-fi-cada (UML),
  []
 
@@ -311,15 +306,15 @@ Package rerunfilecheck Info: File `00_introduction.out' has not changed.
 (rerunfilecheck)             Checksum: CF965081A2E36FC5CFB8FA01F4B57DA7;986.
  ) 
 Here is how much of TeX's memory you used:
- 9855 strings out of 467870
- 157039 string characters out of 5418839
- 585983 words of memory out of 5000000
- 38629 multiletter control sequences out of 15000+600000
+ 9854 strings out of 467870
+ 157166 string characters out of 5418839
+ 585919 words of memory out of 5000000
+ 38628 multiletter control sequences out of 15000+600000
  639908 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,353b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,304b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 00_introduction.pdf (5 pages, 62618 bytes).
+Output written on 00_introduction.pdf (5 pages, 62641 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  11 named destinations out of 1000 (max. 500000)
