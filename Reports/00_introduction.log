@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 21:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 21:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -293,26 +293,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.125 \newpage
-               [1] [2] (00_introduction.aux)
+               [1] [2]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 176.
+ (C:\Users\Bass\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (6.12643pt too wide) in paragraph at lines 176--178
+[]\T1/ptm/m/n/12 Modelar a ar-qui-te-tura do sis-tema uti-li-zando a Lin-gua-gem de Mo-de-la-gem Uni-fi-cada (UML),
+ []
+
+[3] (00_introduction.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-Package rerunfilecheck Info: File `00_introduction.out' has not changed.
-(rerunfilecheck)             Checksum: 056DD2292BC1D56CAACC2FA61CFAD7B2;813.
+
+
+Package rerunfilecheck Warning: File `00_introduction.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `00_introduction.out':
+(rerunfilecheck)             Before: 27DB8AC3DA11E03F4CDF14FE41390C5F;986
+(rerunfilecheck)             After:  CF965081A2E36FC5CFB8FA01F4B57DA7;986.
  ) 
 Here is how much of TeX's memory you used:
- 9824 strings out of 467870
- 156518 string characters out of 5418839
+ 9855 strings out of 467870
+ 157039 string characters out of 5418839
  585983 words of memory out of 5000000
- 38604 multiletter control sequences out of 15000+600000
- 639594 words of font info for 56 fonts, out of 8000000 for 9000
+ 38629 multiletter control sequences out of 15000+600000
+ 639908 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,353b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Bass/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 00_introduction.pdf (4 pages, 60105 bytes).
+Output written on 00_introduction.pdf (5 pages, 62618 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
- 9 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 72 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 57 words of extra memory for PDF output out of 10000 (max. 10000000)
 
