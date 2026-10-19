@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 21:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.8.27)  18 OCT 2026 21:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -307,15 +307,8 @@ Overfull \hbox (6.12643pt too wide) in paragraph at lines 176--178
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
-
-
-Package rerunfilecheck Warning: File `00_introduction.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `00_introduction.out':
-(rerunfilecheck)             Before: 27DB8AC3DA11E03F4CDF14FE41390C5F;986
-(rerunfilecheck)             After:  CF965081A2E36FC5CFB8FA01F4B57DA7;986.
+Package rerunfilecheck Info: File `00_introduction.out' has not changed.
+(rerunfilecheck)             Checksum: CF965081A2E36FC5CFB8FA01F4B57DA7;986.
  ) 
 Here is how much of TeX's memory you used:
  9855 strings out of 467870
