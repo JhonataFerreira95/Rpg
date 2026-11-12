@@ -4,7 +4,6 @@
 
 - Unity version 2021.3.45f1
 - C#
-- 
 
 ## Índice
 1. [Introdução](#introdução)
