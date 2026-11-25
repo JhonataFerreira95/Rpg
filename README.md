@@ -30,8 +30,12 @@ IFRN RPG/
 │   └── Script/
 │   └── Sprites/
 │   └── UI\Dialogue
+├── Docs/
+│   └── Diagrams/
+│   └── Images/
+│   └── Use_case/
 ├── Logs/
-├── Packages/Reports
+├── Packages/
 ├── Reports/
 ├── Planta/
 ├── UserSettings/
