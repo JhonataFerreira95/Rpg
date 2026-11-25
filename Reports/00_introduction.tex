@@ -272,5 +272,182 @@ Desenvolvimento em Nuvem\textit{ (CI/CD)}. Para ajudar os estudantes calouros e 
     visitantes do \textit{campus} Parnamirim.
 \end{itemize}
 
+% =======================================================
+% METODOLOGIA - TRILHA 3: DESENVOLVIMENTO DE UMA SOLUÇÃO TECNOLÓGICA
+% Pacote necessário (se for inserir as figuras): \usepackage{graphicx}
+% =======================================================
+
+\newpage
+
+\section{METODOLOGIA}
+
+Esta seção descreve o ciclo de desenvolvimento do \textit{Desbravando o Campus},
+organizado em quatro etapas: levantamento de requisitos, especificação da solução,
+plano de implementação e realização de testes.
+
+\subsection{Levantamento de Requisitos}
+
+Os requisitos foram elicitados a partir do problema de pesquisa e do público-alvo
+do projeto (calouros e visitantes do \textit{campus} Parnamirim), considerando
+a inspiração no gênero \textit{top-down} e a necessidade de uma experiência
+acolhedora e sem pressão social.
+
+\subsubsection{Requisitos Funcionais}
+
+\begin{itemize}
+    \item \textbf{RF01:} o jogador deve movimentar o personagem nas quatro direções
+    por meio do teclado;
+
+    \item \textbf{RF02:} o personagem deve exibir animações de caminhada e de
+    repouso de acordo com a última direção percorrida;
+
+    \item \textbf{RF03:} o jogo deve representar virtualmente os ambientes do
+    \textit{campus}, respeitando colisões com paredes e objetos;
+
+    \item \textbf{RF04:} o jogador deve poder interagir com personagens que
+    representam colaboradores da instituição;
+
+    \item \textbf{RF05:} o jogo deve apresentar informações sobre os espaços do
+    \textit{campus} e sobre a rotina de estudantes e colaboradores;
+
+    \item \textbf{RF06:} a \textit{landing page} deve permitir ao usuário conhecer
+    o projeto e obter a versão atual do jogo.
+\end{itemize}
+
+\subsubsection{Requisitos Não Funcionais}
+
+\begin{itemize}
+    \item \textbf{RNF01 (Usabilidade):} os controles devem ser simples e
+    compreensíveis por usuários sem experiência prévia com jogos;
+
+    \item \textbf{RNF02 (Desempenho):} o jogo deve manter taxa de quadros estável
+    em computadores de configuração intermediária;
+
+    \item \textbf{RNF03 (Manutenibilidade):} o código deve seguir a arquitetura
+    baseada em componentes e os princípios de POO, com classes de responsabilidade
+    única;
+
+    \item \textbf{RNF04 (Portabilidade):} a distribuição deve funcionar nos
+    sistemas operacionais e navegadores mais comuns entre o público-alvo;
+
+    \item \textbf{RNF05 (Atualização):} novas versões devem ser geradas e
+    publicadas de forma automatizada, por meio de CI/CD.
+\end{itemize}
+
+\subsection{Especificação da Solução}
+
+\subsubsection{Casos de Uso}
+
+O sistema possui dois atores: o \textbf{Jogador} (calouro ou visitante) e o
+\textbf{Desenvolvedor}, responsável por publicar novas versões. Os principais
+casos de uso são descritos a seguir.
+
+\begin{itemize}
+    \item \textbf{UC01 -- Explorar o \textit{campus}:} o jogador move o personagem
+    pelo mapa. \textit{Fluxo principal:} o jogador pressiona as teclas de direção;
+    o sistema lê a entrada, desloca o personagem e atualiza a animação. 
+    \textit{Pré-condição:} jogo iniciado.
+
+    \item \textbf{UC02 -- Interagir com colaborador:} o jogador se aproxima de
+    um personagem e inicia uma conversa para conhecer sua função na instituição.
+
+    \item \textbf{UC03 -- Consultar informações dos espaços:} o jogador acessa
+    informações sobre os ambientes visitados e sobre a rotina do \textit{campus}.
+
+    \item \textbf{UC04 -- Obter o jogo:} o jogador acessa a \textit{landing page}
+    e baixa a versão mais recente.
+
+    \item \textbf{UC05 -- Publicar nova versão:} o desenvolvedor envia o código
+    ao repositório; a esteira de CI/CD gera o \textit{build} e atualiza o jogo e a
+    \textit{landing page}.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{../Docs/Images/use_case.png}
+    \caption{Diagrama de casos de uso do \textit{Desbravando o Campus}}
+\end{figure}
+
+\subsubsection{Modelagem Arquitetural}
+
+A arquitetura segue o padrão \textit{Component-Based Architecture} do
+\textit{Unity}, no qual cada entidade é composta por componentes independentes.
+O personagem, por exemplo, é formado pela classe \texttt{PlayerIFRN}, que lê o
+teclado e movimenta o \texttt{Rigidbody2D}, e pela classe \texttt{PlayerAnimIFRN},
+que consulta a direção do jogador e define o parâmetro \texttt{Transition} do
+\texttt{Animator}. Assim, a lógica de movimento e a de animação permanecem
+separadas, e cada uma pode ser alterada sem afetar a outra.
+
+O fluxo de dados do jogo é: entrada do teclado $\rightarrow$ \texttt{PlayerIFRN}
+$\rightarrow$ propriedade \texttt{direction} $\rightarrow$ \texttt{PlayerAnimIFRN}
+$\rightarrow$ \texttt{Animator}. Já o fluxo de entrega é: repositório
+\textit{GitHub} $\rightarrow$ esteira de CI/CD em \textit{Docker} $\rightarrow$
+\textit{build} do jogo $\rightarrow$ \textit{landing page}. Na versão atual, o
+jogo não depende de banco de dados nem de APIs externas.
+
+% Insira aqui os diagramas de classes e de blocos:
+% \begin{figure}[h]
+%     \centering
+%     \includegraphics[width=0.9\textwidth]{Docs/images/classes.png}
+%     \caption{Diagrama de classes do personagem jogável}
+% \end{figure}
+
+\subsection{Plano de Implementação}
+
+\subsubsection{Tecnologias Adotadas}
+
+\begin{itemize}
+    \item \textbf{Motor gráfico e linguagem:} \textit{Unity} e C\#, aplicando
+    POO;
+
+    \item \textbf{Recursos visuais:} \textit{sprites} e \textit{tilesets} 2D para
+    a ambientação do \textit{campus}, com \textit{NavMeshPlus} para a navegação de
+    personagens não jogáveis;
+
+    \item \textbf{Versionamento:} \textit{Git}, com repositório no \textit{GitHub};
+
+    \item \textbf{Containers e CI/CD:} \textit{Docker}, para padronizar o ambiente
+    de \textit{build} e automatizar a entrega;
+
+    \item \textbf{\textit{Front-end} de divulgação:} \textit{landing page} com
+    HTML, CSS e JavaScript;
+
+    \item \textbf{Modelagem:} UML e \textit{Mermaid}, com documentação organizada
+    em um diretório \texttt{Docs}, fora da pasta \texttt{Assets} do \textit{Unity}.
+\end{itemize}
+
+\subsubsection{Protótipos de Interface}
+
+Serão elaborados protótipos (\textit{mockups}) das telas principais: menu inicial,
+cenário de exploração, caixa de diálogo com colaboradores e \textit{landing page}.
+Os protótipos serão validados antes da implementação final, de modo a priorizar
+legibilidade e simplicidade, em consonância com o requisito RNF01.
+
+\subsection{Realização de Testes}
+
+Os testes serão realizados em quatro frentes:
+
+\begin{itemize}
+    \item \textbf{Testes de navegação:} percorrer todo o mapa nas quatro direções,
+    verificando colisões, limites do cenário e ausência de áreas inacessíveis;
+
+    \item \textbf{Testes funcionais:} verificar cada requisito funcional por meio
+    de roteiros. Por exemplo, para o RF02, conferir se a animação de repouso
+    corresponde à última direção percorrida;
+
+    \item \textbf{Compatibilidade de dispositivos:} executar o jogo e acessar a
+    \textit{landing page} em diferentes resoluções, sistemas operacionais e
+    navegadores;
+
+    \item \textbf{Testes de usabilidade:} aplicar o jogo a um grupo de calouros e
+    visitantes do \textit{campus} Parnamirim, com observação da navegação e
+    questionário de satisfação, a exemplo da escala \textit{System Usability Scale}
+    (SUS).
+\end{itemize}
+
+Cada teste terá um roteiro com o objetivo, os passos, o resultado esperado e o
+resultado obtido. Os problemas encontrados serão registrados e corrigidos antes
+da publicação da versão final.
+
 
 \end{document}
